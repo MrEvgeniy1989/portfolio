@@ -1,18 +1,16 @@
 .mainBlock {
   height: 100vh;
-
-  background-color: #ffd4f0;
 }
 
 .text {
-  width: 350px;
+  width: 550px;
 
-  background-color: #f7f7f7;
+  color: #fff !important;
 }
 
 .photo {
   width: 300px;
   height: 400px;
 
-  background-color: #f7f7f7;
+  background-color: #333333;
 }

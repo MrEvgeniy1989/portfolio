@@ -2,8 +2,6 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-
-  background-color: #99d0fb;
 }
 
 .footerContainer {
@@ -14,7 +12,6 @@
 }
 
 .title {
-  background-color: #eeeef5;
 }
 
 .footer {
@@ -32,4 +29,8 @@
   height: 50px;
 
   background-color: darkgray;
+}
+
+.copyright {
+  color: rgba(255, 255, 255, .5);
 }

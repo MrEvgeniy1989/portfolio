@@ -15,7 +15,7 @@ export const Footer = () => {
           <div className={style.footerSocialNetwork}></div>
           <div className={style.footerSocialNetwork}></div>
         </div>
-        <span>© 2023 Все права защищены</span>
+        <span className={style.copyright}>© 2023 Все права защищены</span>
       </div>
     </div>
   )
