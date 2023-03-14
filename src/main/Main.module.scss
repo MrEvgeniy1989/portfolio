@@ -40,14 +40,14 @@
         @include text($TextFontFamily, 20px, 1.0, 400);
         margin: 0;
       }
-      @media screen and (max-width: 1143px) {
+      @media screen and (max-width: 1194px) {
         align-items: center;
       }
     }
     .photo {
       position: relative;
       z-index: 1;
-      @media screen and (max-width: 1143px) {
+      @media screen and (max-width: 1194px) {
         margin-top: 50px;
       }
       .image {

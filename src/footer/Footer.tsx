@@ -3,7 +3,7 @@ import React from 'react'
 import codewarsIcon from '../assets/Icons/codewarsIcon.svg'
 import githubIconBlack from '../assets/Icons/githubIconBlack.svg'
 import likedinIcon from '../assets/Icons/likedinIcon.svg'
-import mailIcons from '../assets/Icons/mailIcons.png'
+import mailIcon from '../assets/Icons/mailIcons.png'
 import telegramIcon from '../assets/Icons/telegramIcon.svg'
 import { Title } from '../common/components/title/Title'
 
@@ -17,27 +17,27 @@ export const Footer = () => {
         <div className={style.socialIcons}>
           <div className={style.socialIcon}>
             <a href="">
-              <img src={telegramIcon} alt="" />
+              <img src={telegramIcon} alt="Telegram Icon" />
             </a>
           </div>
           <div className={style.socialIcon}>
             <a href="">
-              <img src={likedinIcon} alt="" />
+              <img src={likedinIcon} alt="Likedin Icon" />
             </a>
           </div>
           <div className={style.socialIcon}>
             <a href="">
-              <img src={codewarsIcon} alt="" />
+              <img src={codewarsIcon} alt="Codewars Icon" />
             </a>
           </div>
           <div className={style.socialIcon}>
             <a href="">
-              <img src={githubIconBlack} alt="" />
+              <img src={githubIconBlack} alt="Github Icon" />
             </a>
           </div>
           <div className={style.socialIcon}>
             <a href="">
-              <img src={mailIcons} alt="" />
+              <img src={mailIcon} alt="Mail Icon" />
             </a>
           </div>
         </div>

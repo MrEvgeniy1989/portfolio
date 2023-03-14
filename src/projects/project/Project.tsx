@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { Button } from '../../common/components/button/Button'
+
 import style from './Project.module.scss'
 
 type ProjectPropsType = {
@@ -14,7 +16,7 @@ export const Project = (props: ProjectPropsType) => {
   return (
     <div className={style.project}>
       <div className={style.imgContainer} style={props.style}>
-        <a className={style.viewButton}>Cмотреть</a>
+        <Button text={'Смотреть'} />
       </div>
       <div className={style.projectInfo}>
         <h3 className={style.projectTitle}>{props.title}</h3>

@@ -6,7 +6,7 @@
   padding: 0 30px;
   @include flex(row, flex-end, center, nowrap);
   opacity: 0.9;
-  position: fixed;
+  position: relative;
   z-index: 9999;
   left: 0;
   right: 0;
