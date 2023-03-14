@@ -1,10 +1,9 @@
 import React from 'react'
 
+import socialImage from '../assets/images/socialNetwork1.jpg'
+import todoImage from '../assets/images/todolist1.jpg'
 import { Title } from '../common/components/title/Title'
-import styleContainer from '../common/styles/Container.module.css'
 
-import socialImage from './../assets/image/socialNetwork1.jpg'
-import todoImage from './../assets/image/todolist1.jpg'
 import { Project } from './project/Project'
 import style from './Projects.module.scss'
 
@@ -21,7 +20,7 @@ export const Projects = () => {
 
   return (
     <div className={style.projectsBlock}>
-      <div className={`${styleContainer.container} ${style.projectsContainer}`}>
+      <div className={style.container}>
         <Title text={'Projects'} />
         <div className={style.projects}>
           <Project

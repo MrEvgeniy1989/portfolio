@@ -1,0 +1,14 @@
+@import "./../common/styles/sass/variables";
+@import "./../common/styles/sass/mixins";
+
+.skillsBlock {
+  .container {
+    @include container();
+    @include flex(column, flex-start, center, nowrap);
+
+    .skills {
+      @include flex(row, space-between, flex-start, nowrap);
+      width: 100%;
+    }
+  }
+}

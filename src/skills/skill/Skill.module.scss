@@ -1,0 +1,24 @@
+@import "../../common/styles/sass/variables";
+@import "../../common/styles/sass/mixins";
+
+.skill {
+  @include flex(column, flex-start , center, nowrap);
+
+  width: 288px;
+  margin-bottom: 10px;
+
+  color: $textColor;
+  text-align: center;
+
+  background-color: $bgSecondary;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+
+  background-color: #333333;
+}
+.description {
+  padding: 10px;
+}

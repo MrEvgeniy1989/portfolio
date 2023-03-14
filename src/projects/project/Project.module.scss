@@ -6,7 +6,7 @@
   flex-direction: column;
   width: 450px;
   color: #fff !important;
-  background-color: $bgSecondColor;
+  background-color: $bgSecondary;
 
   .imgContainer {
     position: relative;
@@ -44,14 +44,14 @@
     padding: 25px 20px;
 
     .projectTitle {
-      @include text($titleFontFamily, 16px, 1.2, 700);
+      @include text($TitleFontFamily, 16px, 1.2, 700);
       color: $textColor;
       margin: 0 0 5px;
       letter-spacing: 1px;
     }
 
     .description {
-      @include text($textFontFamily, 12px, 1.8, 400);
+      @include text($TextFontFamily, 12px, 1.8, 400);
       color: $textColor;
     }
   }
