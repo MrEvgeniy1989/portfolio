@@ -1,17 +1,11 @@
 import React from 'react'
 
+import { faCss3Alt } from '@fortawesome/free-brands-svg-icons/faCss3Alt'
+import { faHtml5 } from '@fortawesome/free-brands-svg-icons/faHtml5'
+import { faReact } from '@fortawesome/free-brands-svg-icons/faReact'
+
 import { Title } from '../common/components/title/Title'
 
-import cssIcon from './../assets/Icons/skills/css.svg'
-import formikIcon from './../assets/Icons/skills/formik.svg'
-import htmlIcon from './../assets/Icons/skills/html.svg'
-import javaScriptIcon from './../assets/Icons/skills/javaScript.svg'
-import reactIcon from './../assets/Icons/skills/react.svg'
-import reduxToolkitIcon from './../assets/Icons/skills/reduxToolkit.svg'
-import restApiIcon from './../assets/Icons/skills/restAPI.svg'
-import storyBookIcon from './../assets/Icons/skills/storyBook.svg'
-import typeScriptIcon from './../assets/Icons/skills/typeScript.svg'
-import unitTestsIcon from './../assets/Icons/skills/unitTest.svg'
 import { Skill } from './skill/Skill'
 import style from './Skills.module.scss'
 
@@ -22,66 +16,56 @@ export const Skills = () => {
         <Title text={'Skills'} />
         <div className={style.skills}>
           <Skill
-            imgSrc={typeScriptIcon}
-            imgAltTitle={''}
+            iconifyIcon={'mdi:language-typescript'}
             title={'TypeScript'}
             description={
               'Ab consequatur dolor dolorum eaque exercitationem incidunt ipsam maiores nobis nulla omnis praesentium...'
             }
           />
           <Skill
-            imgSrc={javaScriptIcon}
-            imgAltTitle={''}
+            iconifyIcon={'fa-brands:js'}
             title={'JavaScript'}
             description={
               'dolor dolorum eaque exercitationem incidunt ipsam maiores nobis nulla omnis praesentium...'
             }
           />
           <Skill
-            imgSrc={reactIcon}
-            imgAltTitle={''}
+            FontAwesomeIcon={faReact}
             title={'React'}
             description={'incidunt ipsam maiores nobis nulla omnis praesentium.'}
           />
           <Skill
-            imgSrc={reduxToolkitIcon}
-            imgAltTitle={''}
+            iconifyIcon={'tabler:brand-redux'}
+            title={'Redux'}
+            description={'incidunt ipsam maiores nobis nulla omnis praesentium.'}
+          />
+          <Skill
+            iconifyIcon={'tabler:brand-redux'}
             title={'Redux-Toolkit'}
             description={'incidunt ipsam maiores nobis nulla omnis praesentium.'}
           />
           <Skill
-            imgSrc={htmlIcon}
-            imgAltTitle={''}
+            FontAwesomeIcon={faHtml5}
             title={'HTML'}
             description={'incidunt ipsam maiores nobis nulla omnis praesentium.'}
           />
           <Skill
-            imgSrc={cssIcon}
-            imgAltTitle={''}
+            FontAwesomeIcon={faCss3Alt}
             title={'CSS'}
             description={'incidunt ipsam maiores nobis nulla omnis praesentium.'}
           />
           <Skill
-            imgSrc={formikIcon}
-            imgAltTitle={''}
-            title={'Formik'}
-            description={'incidunt ipsam maiores nobis nulla omnis praesentium.'}
-          />
-          <Skill
-            imgSrc={restApiIcon}
-            imgAltTitle={''}
+            iconifyIcon={'mdi:api'}
             title={'REST API'}
             description={'incidunt ipsam maiores nobis nulla omnis praesentium.'}
           />
           <Skill
-            imgSrc={storyBookIcon}
-            imgAltTitle={''}
+            iconifyIcon={'simple-icons:storybook'}
             title={'Story book'}
             description={'incidunt ipsam maiores nobis nulla omnis praesentium.'}
           />
           <Skill
-            imgSrc={unitTestsIcon}
-            imgAltTitle={''}
+            iconifyIcon={'file-icons:test-js'}
             title={'Unit tests'}
             description={'incidunt ipsam maiores nobis nulla omnis praesentium.'}
           />

@@ -30,8 +30,16 @@
     transform: rotate(45deg);
     margin-bottom: 30px;
 
-    img {
+    img,
+    .fontAwesomeIcon,
+    .iconifyIcon {
       transform: rotate(-45deg);
+      height: 80%;
+      color: $primaryColor;
+    }
+
+    .iconifyIcon {
+      height: 90%;
     }
   }
 
