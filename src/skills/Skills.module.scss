@@ -8,15 +8,6 @@
     @include container();
     @include flex(column, flex-start, center, nowrap);
 
-    .someElement {
-      width: 50%;
-      height: 100px;
-      border: 1px solid white;
-      color: $textColor;
-      background-color: $primaryColor;
-
-    }
-
     .skills {
       @include flex(row, center, flex-start, wrap);
       width: 100%;
