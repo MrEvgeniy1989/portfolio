@@ -1,18 +1,19 @@
-@import "../common/styles/sass/variables";
-@import "../common/styles/sass/mixins";
+@import '../common/styles/sass/variables';
+@import '../common/styles/sass/mixins';
 
 .projectsBlock {
   padding: 50px 0;
 
   .container {
-    @include container();
+    @include container;
     @include flex(column, flex-start, stretch, nowrap);
 
     .projects {
       @include flex(row, space-between, flex-start, wrap);
+
       margin-top: 50px;
 
-      @media screen and (max-width: 1127px) {
+      @media screen and (width <= 1127px) {
         justify-content: center;
       }
     }

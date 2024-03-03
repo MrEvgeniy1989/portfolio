@@ -1,33 +1,45 @@
-@import "../../styles/sass/variables";
-@import "../../styles/sass/mixins";
+@import '../../styles/sass/variables';
+@import '../../styles/sass/mixins';
 
+%btn,
 .btn {
-  border: none;
   @include flex(row, center, center, nowrap);
   @include text($TextFontFamily, 14px, 1.2, 400);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  padding: 8px 20px;
-  max-width: 160px;
-  width: 100%;
-  color: $textColor;
-  outline: none;
+
   position: relative;
   z-index: 0;
+
+  width: 100%;
+  max-width: 160px;
+  padding: 8px 20px;
+
+  color: $textColor;
   text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  border: none;
+  outline: none;
+
   &::after {
     content: '';
+
     position: absolute;
+    z-index: -1;
+    bottom: 0;
+
     width: 50%;
     height: 10px;
+
     background: $primaryColor;
-    bottom: 0;
-    z-index: -1;
+
     transition: all 0.2s ease-in-out;
   }
+
   &:hover {
-    text-decoration: none;
     color: $textColor;
+    text-decoration: none;
+
     &::after {
       width: 100%;
       height: 100%;

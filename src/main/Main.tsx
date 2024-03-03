@@ -4,7 +4,7 @@ import style from './Main.module.scss'
 
 export const Main = () => {
   return (
-    <div className={style.mainBlock}>
+    <div className={style.mainBlock} id={'main'}>
       <div className={style.container}>
         <div className={style.greeting}>
           <span>Hi There</span>

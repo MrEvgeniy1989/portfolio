@@ -1,5 +1,5 @@
-@import "../../common/styles/sass/variables";
-@import "../../common/styles/sass/mixins";
+@import '../../common/styles/sass/variables';
+@import '../../common/styles/sass/mixins';
 
 .skill {
   @include flex(column, flex-start, center, nowrap);
@@ -10,16 +10,16 @@
   color: $textColor;
   text-align: center;
 
-  @media screen and (max-width: 1439px){
+  @media screen and (max-width: 1439px) {
     flex-basis: 25%;
   }
-  @media screen and (max-width: 1079px){
+  @media screen and (max-width: 1079px) {
     flex-basis: 33%;
   }
-  @media screen and (max-width: 720px){
+  @media screen and (max-width: 720px) {
     flex-basis: 50%;
   }
-  @media screen and (max-width: 352px){
+  @media screen and (max-width: 352px) {
     flex-basis: 100%;
   }
   .icon {
@@ -52,5 +52,3 @@
     }
   }
 }
-
-

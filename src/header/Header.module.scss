@@ -1,13 +1,16 @@
-@import "./../common/styles/sass/variables";
-@import "./../common/styles/sass/mixins";
+@import './../common/styles/sass/variables';
+@import './../common/styles/sass/mixins';
 
 .header {
-  height: 80px;
-  padding: 0 30px;
   @include flex(row, flex-end, center, nowrap);
-  opacity: 0.9;
+
   position: relative;
   z-index: 9999;
-  left: 0;
   right: 0;
+  left: 0;
+
+  height: 80px;
+  padding: 0 30px;
+
+  opacity: 0.9;
 }

@@ -1,13 +1,13 @@
 import React from 'react'
 
+import style from './Footer.module.scss'
+
 import codewarsIcon from '../assets/Icons/codewarsIcon.svg'
 import githubIconBlack from '../assets/Icons/githubIconBlack.svg'
 import likedinIcon from '../assets/Icons/likedinIcon.svg'
 import mailIcon from '../assets/Icons/mailIcons.png'
 import telegramIcon from '../assets/Icons/telegramIcon.svg'
 import { Title } from '../common/components/title/Title'
-
-import style from './Footer.module.scss'
 
 export const Footer = () => {
   return (
@@ -16,28 +16,28 @@ export const Footer = () => {
         <Title text={'Evgenii Slupachik'} />
         <div className={style.socialIcons}>
           <div className={style.socialIcon}>
-            <a href="">
-              <img src={telegramIcon} alt="Telegram Icon" />
+            <a href={''}>
+              <img alt={'Telegram Icon'} src={telegramIcon} />
             </a>
           </div>
           <div className={style.socialIcon}>
-            <a href="">
-              <img src={likedinIcon} alt="Likedin Icon" />
+            <a href={''}>
+              <img alt={'Likedin Icon'} src={likedinIcon} />
             </a>
           </div>
           <div className={style.socialIcon}>
-            <a href="">
-              <img src={codewarsIcon} alt="Codewars Icon" />
+            <a href={''}>
+              <img alt={'Codewars Icon'} src={codewarsIcon} />
             </a>
           </div>
           <div className={style.socialIcon}>
-            <a href="">
-              <img src={githubIconBlack} alt="Github Icon" />
+            <a href={''}>
+              <img alt={'Github Icon'} src={githubIconBlack} />
             </a>
           </div>
           <div className={style.socialIcon}>
-            <a href="">
-              <img src={mailIcon} alt="Mail Icon" />
+            <a href={''}>
+              <img alt={'Mail Icon'} src={mailIcon} />
             </a>
           </div>
         </div>

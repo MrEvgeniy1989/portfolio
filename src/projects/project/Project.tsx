@@ -1,15 +1,15 @@
 import React from 'react'
 
-import { Button } from '../../common/components/button/Button'
-
 import style from './Project.module.scss'
 
+import { Button } from '../../common/components/button/Button'
+
 type ProjectPropsType = {
-  title: string
   description: string
   style: {
     backgroundImage: string
   }
+  title: string
 }
 
 export const Project = (props: ProjectPropsType) => {

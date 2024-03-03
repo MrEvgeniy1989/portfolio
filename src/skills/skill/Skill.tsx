@@ -7,23 +7,23 @@ import { Icon } from '@iconify/react'
 import style from './Skill.module.scss'
 
 type SkillPropsType = {
-  title: string
-  description: string
-  imgSrc?: string
-  imgAltTitle?: string
   FontAwesomeIcon?: IconProp
+  description: string
   iconifyIcon?: string
+  imgAltTitle?: string
+  imgSrc?: string
+  title: string
 }
 
 export const Skill = (props: SkillPropsType) => {
   let icon
 
   if (props.FontAwesomeIcon) {
-    icon = <FontAwesomeIcon icon={props.FontAwesomeIcon} className={style.fontAwesomeIcon} />
+    icon = <FontAwesomeIcon className={style.fontAwesomeIcon} icon={props.FontAwesomeIcon} />
   } else if (props.iconifyIcon) {
-    icon = <Icon icon={props.iconifyIcon} className={style.iconifyIcon} fontSize={100} />
+    icon = <Icon className={style.iconifyIcon} fontSize={100} icon={props.iconifyIcon} />
   } else {
-    icon = <img src={props.imgSrc} alt={props.imgAltTitle} />
+    icon = <img alt={props.imgAltTitle} src={props.imgSrc} />
   }
 
   return (

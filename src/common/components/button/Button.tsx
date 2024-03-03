@@ -8,7 +8,7 @@ type ButtonPropsType = {
 
 export const Button = (props: ButtonPropsType) => {
   return (
-    <a href={''} className={style.btn}>
+    <a className={style.btn} href={''}>
       {props.text}
     </a>
   )
