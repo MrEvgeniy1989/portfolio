@@ -11,7 +11,7 @@ import { Title } from '../common/components/title/Title'
 
 export const Footer = () => {
   return (
-    <div className={style.footer}>
+    <div className={style.footer} id={'contacts'}>
       <div className={style.container}>
         <Title text={'Evgenii Slupachik'} />
         <div className={style.socialIcons}>
