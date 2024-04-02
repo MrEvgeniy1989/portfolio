@@ -29,17 +29,23 @@ export const Main = () => {
           </h1>
         </div>
 
-        <Tilt
-          className={style.parallaxEffectImg}
-          gyroscope
-          perspective={800}
-          scale={1.1}
-          tiltMaxAngleX={40}
-          tiltMaxAngleY={40}
-          transitionSpeed={1500}
-        >
-          <img alt={'photo'} className={style.photo} src={photo} />
-        </Tilt>
+        {window.innerWidth > 1230 ? (
+          <Tilt
+            className={style.parallaxEffectImg}
+            gyroscope
+            perspective={800}
+            scale={1.1}
+            tiltMaxAngleX={40}
+            tiltMaxAngleY={40}
+            transitionSpeed={1500}
+          >
+            <img alt={'photo'} className={style.photo} src={photo} />
+          </Tilt>
+        ) : (
+          <div className={style.mobilePhotoBackground}>
+            <img alt={'photo'} className={style.mobilePhoto} src={photo} />
+          </div>
+        )}
       </div>
     </div>
   )
