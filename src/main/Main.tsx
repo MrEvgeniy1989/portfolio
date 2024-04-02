@@ -1,8 +1,11 @@
 import React from 'react'
+import Tilt from 'react-parallax-tilt'
 
 import Typewriter from 'typewriter-effect'
 
 import style from './Main.module.scss'
+
+import photo from '../assets/images/photo.png'
 
 export const Main = () => {
   return (
@@ -25,9 +28,18 @@ export const Main = () => {
             />
           </h1>
         </div>
-        <div className={style.photo}>
-          <div className={style.image}></div>
-        </div>
+
+        <Tilt
+          className={style.parallaxEffectImg}
+          gyroscope
+          perspective={800}
+          scale={1.1}
+          tiltMaxAngleX={40}
+          tiltMaxAngleY={40}
+          transitionSpeed={1500}
+        >
+          <img alt={'photo'} className={style.photo} src={photo} />
+        </Tilt>
       </div>
     </div>
   )
