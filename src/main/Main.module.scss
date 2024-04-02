@@ -70,6 +70,7 @@
 
     .parallaxEffectImg {
       position: relative;
+      z-index: 1;
       transform-style: preserve-3d;
       transform: perspective(1000px);
 
@@ -84,13 +85,14 @@
         content: '';
 
         position: absolute;
-        top: -4%;
-        left: -4%;
+        z-index: -1;
+        top: -15px;
+        left: 15px;
 
-        width: 110%;
+        width: 105%;
         height: 110%;
 
-        border: 5px solid $primaryColor;
+        border: 5px solid rgb(78 147 230 / 50%);
       }
 
       .photo {
@@ -106,6 +108,7 @@
 
     .mobilePhotoBackground {
       position: relative;
+      z-index: 1;
 
       width: 260px;
       height: 360px;
@@ -120,13 +123,14 @@
         content: '';
 
         position: absolute;
-        top: -4%;
-        left: -4%;
+        z-index: -1;
+        top: -15px;
+        left: 15px;
 
-        width: 110%;
+        width: 105%;
         height: 110%;
 
-        border: 5px solid $primaryColor;
+        border: 5px solid rgb(78 147 230 / 50%);
       }
 
       .mobilePhoto {
