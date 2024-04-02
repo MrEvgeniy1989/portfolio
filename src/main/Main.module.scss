@@ -68,19 +68,12 @@
       }
     }
 
-    .parallaxEffectImg {
+    .photoFrame {
       position: relative;
       z-index: 1;
-      transform-style: preserve-3d;
-      transform: perspective(1000px);
-
       width: 300px;
       height: 400px;
 
-      background-image: url('../assets/images/photoBackground.webp');
-      background-repeat: no-repeat;
-      background-size: cover;
-
       &::before {
         content: '';
 
@@ -92,51 +85,60 @@
         width: 105%;
         height: 110%;
 
-        border: 5px solid rgb(78 147 230 / 50%);
+        border: 5px solid $primaryColor;
       }
 
-      .photo {
-        transform: translateZ(30px) scale(0.96);
+      .parallaxEffectImg {
+        position: relative;
+        z-index: 1;
+        transform-style: preserve-3d;
+        transform: perspective(1000px);
 
-        width: 100%;
-        height: 100%;
-        margin-left: 0;
+        width: 300px;
+        height: 400px;
 
-        object-fit: cover;
-      }
-    }
+        background-image: url('../assets/images/photoBackground.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
 
-    .mobilePhotoBackground {
-      position: relative;
-      z-index: 1;
-
-      width: 260px;
-      height: 360px;
-
-      background-image: url('../assets/images/photoBackground.webp');
-      background-repeat: no-repeat;
-      background-size: cover;
-
-      transition: 0.5s;
-
-      &::before {
-        content: '';
-
-        position: absolute;
-        z-index: -1;
-        top: -15px;
-        left: 15px;
-
-        width: 105%;
-        height: 110%;
-
-        border: 5px solid rgb(78 147 230 / 50%);
+        .photo {
+          transform: translateZ(30px) scale(0.96);
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
       }
 
-      .mobilePhoto {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+      .mobilePhotoBackground {
+        position: relative;
+        z-index: 1;
+
+        width: 260px;
+        height: 360px;
+
+        background-image: url('../assets/images/photoBackground.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &::before {
+          content: '';
+
+          position: absolute;
+          z-index: -1;
+          top: -15px;
+          left: 15px;
+
+          width: 105%;
+          height: 110%;
+
+          border: 5px solid $primaryColor;
+        }
+
+        .mobilePhoto {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
       }
     }
 
