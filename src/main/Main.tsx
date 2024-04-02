@@ -7,7 +7,6 @@ export const Main = () => {
     <div className={style.mainBlock} id={'main'}>
       <div className={style.container}>
         <div className={style.greeting}>
-          <span>Hi There</span>
           <span>
             I am Evgenii <span>Slupachik</span>
           </span>

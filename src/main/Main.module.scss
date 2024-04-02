@@ -15,10 +15,9 @@
       @include flex(column, flex-start, flex-start, nowrap);
 
       span {
-        font-size: 16px;
         color: $textColor;
 
-        &:nth-child(2) {
+        &:nth-child(1) {
           @include text($TitleFontFamily, 50px, 1.2, 700);
 
           margin: 10px 0;
