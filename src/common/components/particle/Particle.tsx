@@ -70,8 +70,8 @@ export const Particle = () => {
             number: {
               density: {
                 enable: true,
-                height: 800,
-                width: 800,
+                height: 1500,
+                width: 1500,
               },
               value: 50,
             },
