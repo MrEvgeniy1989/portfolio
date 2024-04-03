@@ -35,7 +35,7 @@ export const Main = () => {
               className={style.parallaxEffectImg}
               gyroscope
               perspective={800}
-              scale={1.1}
+              scale={1}
               tiltMaxAngleX={40}
               tiltMaxAngleY={40}
               transitionSpeed={1500}
