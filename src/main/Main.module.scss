@@ -123,20 +123,6 @@
         background-repeat: no-repeat;
         background-size: cover;
 
-        &::before {
-          content: '';
-
-          position: absolute;
-          z-index: -1;
-          top: -15px;
-          left: 15px;
-
-          width: 105%;
-          height: 110%;
-
-          border: 5px solid $primaryColor;
-        }
-
         .mobilePhoto {
           width: 100%;
           height: 100%;
