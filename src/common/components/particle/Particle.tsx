@@ -3,8 +3,11 @@ import { useEffect, useState } from 'react'
 import { Particles, initParticlesEngine } from '@tsparticles/react'
 import { loadSlim } from '@tsparticles/slim'
 
+import { useTheme } from '../themeProvider/ThemeProvider'
+
 export const Particle = () => {
   const [init, setInit] = useState(false)
+  const theme = useTheme()
 
   useEffect(() => {
     initParticlesEngine(async engine => {
@@ -45,10 +48,10 @@ export const Particle = () => {
           },
           particles: {
             color: {
-              value: '#ffffff',
+              value: theme === 'dark' ? '#ffffff' : '#000000',
             },
             links: {
-              color: '#ffffff',
+              color: theme === 'dark' ? '#ffffff' : '#000000',
               distance: 200,
               enable: true,
               opacity: 0.5,
