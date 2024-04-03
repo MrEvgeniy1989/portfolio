@@ -1,10 +1,11 @@
-@import '../common/styles/sass/variables';
 @import '../common/styles/sass/mixins';
 
 .footer {
   @include flex(row, center, stretch, nowrap);
 
+  position: relative;
   min-height: 300px;
+  background-color: var(--background-primary);
 
   .container {
     @include container;
@@ -21,7 +22,9 @@
       .socialIcon {
         width: 60px;
         height: 60px;
-        border: 1px solid #4a4a4a;
+
+        opacity: 0.5;
+        border: 1px solid var(--text-color);
         border-radius: 50%;
 
         a {
@@ -40,17 +43,8 @@
         }
 
         &:hover {
-          border: 1px solid $textColor;
-          transition: all 0.3s ease-in-out 0s;
-
-          .telegramIcon,
-          .linkedinIcon,
-          .codewarsIcon,
-          .githubIcon,
-          .mailIcon {
-            fill: $textColor;
-            transition: all 0.3s ease-in-out 0s;
-          }
+          opacity: 1;
+          transition: opacity 0.2s ease;
         }
 
         @media screen and (width <= 380px) {
@@ -65,7 +59,7 @@
     }
 
     .copyright {
-      @include text($TextFontFamily, 14px, 1.8, 300);
+      @include text(var(--text-font-family), 14px, 1.8, 300);
 
       margin-top: 40px;
       opacity: 0.6;

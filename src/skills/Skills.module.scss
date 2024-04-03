@@ -1,8 +1,9 @@
-@import './../common/styles/sass/variables';
 @import './../common/styles/sass/mixins';
 
 .skillsBlock {
+  position: relative;
   padding: 50px 0;
+  background-color: var(--background-primary);
 
   .container {
     @include container;

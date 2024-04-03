@@ -1,41 +1,30 @@
-@import '../../common/styles/sass/variables';
 @import '../../common/styles/sass/mixins';
 
 .skill {
   @include flex(column, flex-start, center, nowrap);
-  //width: 288px;
+
   min-width: 20%;
   margin-bottom: 40px;
-
-  color: $textColor;
+  color: var(--text-color);
   text-align: center;
 
-  @media screen and (max-width: 1439px) {
-    flex-basis: 25%;
-  }
-  @media screen and (max-width: 1079px) {
-    flex-basis: 33%;
-  }
-  @media screen and (max-width: 720px) {
-    flex-basis: 50%;
-  }
-  @media screen and (max-width: 352px) {
-    flex-basis: 100%;
-  }
   .icon {
     @include flex(row, center, center, nowrap);
+
+    transform: rotate(45deg);
+
     width: 90px;
     height: 90px;
-    background-color: #333333;
-    transform: rotate(45deg);
     margin-bottom: 30px;
+
+    background-color: var(--background-secondary);
 
     img,
     .fontAwesomeIcon,
     .iconifyIcon {
       transform: rotate(-45deg);
       height: 80%;
-      color: $primaryColor;
+      color: var(--primary-color);
     }
 
     .iconifyIcon {
@@ -45,10 +34,27 @@
 
   .skillInfo {
     h3 {
-      @include text($TitleFontFamily, 20px, 1.2, 700);
-      color: $textColor;
+      @include text(var(--font-family-primary), 20px, 1.2, 700);
+
       margin: 0 0 5px;
+      color: var(--text-color);
       letter-spacing: 1px;
     }
+  }
+
+  @media screen and (width <= 1439px) {
+    flex-basis: 25%;
+  }
+
+  @media screen and (width <= 1079px) {
+    flex-basis: 33%;
+  }
+
+  @media screen and (width <= 720px) {
+    flex-basis: 50%;
+  }
+
+  @media screen and (width <= 352px) {
+    flex-basis: 100%;
   }
 }

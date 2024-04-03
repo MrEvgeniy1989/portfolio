@@ -8,7 +8,6 @@ import style from './Skill.module.scss'
 
 type SkillPropsType = {
   FontAwesomeIcon?: IconProp
-  description: string
   iconifyIcon?: string
   imgAltTitle?: string
   imgSrc?: string

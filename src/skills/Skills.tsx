@@ -15,60 +15,16 @@ export const Skills = () => {
       <div className={style.container}>
         <Title text={'Skills'} />
         <div className={style.skills}>
-          <Skill
-            description={
-              'Ab consequatur dolor dolorum eaque exercitationem incidunt ipsam maiores nobis nulla omnis praesentium...'
-            }
-            iconifyIcon={'mdi:language-typescript'}
-            title={'TypeScript'}
-          />
-          <Skill
-            description={
-              'dolor dolorum eaque exercitationem incidunt ipsam maiores nobis nulla omnis praesentium...'
-            }
-            iconifyIcon={'fa-brands:js'}
-            title={'JavaScript'}
-          />
-          <Skill
-            FontAwesomeIcon={faReact}
-            description={'incidunt ipsam maiores nobis nulla omnis praesentium.'}
-            title={'React'}
-          />
-          <Skill
-            description={'incidunt ipsam maiores nobis nulla omnis praesentium.'}
-            iconifyIcon={'tabler:brand-redux'}
-            title={'Redux'}
-          />
-          <Skill
-            description={'incidunt ipsam maiores nobis nulla omnis praesentium.'}
-            iconifyIcon={'tabler:brand-redux'}
-            title={'Redux-Toolkit'}
-          />
-          <Skill
-            FontAwesomeIcon={faHtml5}
-            description={'incidunt ipsam maiores nobis nulla omnis praesentium.'}
-            title={'HTML'}
-          />
-          <Skill
-            FontAwesomeIcon={faCss3Alt}
-            description={'incidunt ipsam maiores nobis nulla omnis praesentium.'}
-            title={'CSS'}
-          />
-          <Skill
-            description={'incidunt ipsam maiores nobis nulla omnis praesentium.'}
-            iconifyIcon={'mdi:api'}
-            title={'REST API'}
-          />
-          <Skill
-            description={'incidunt ipsam maiores nobis nulla omnis praesentium.'}
-            iconifyIcon={'simple-icons:storybook'}
-            title={'Story book'}
-          />
-          <Skill
-            description={'incidunt ipsam maiores nobis nulla omnis praesentium.'}
-            iconifyIcon={'file-icons:test-js'}
-            title={'Unit tests'}
-          />
+          <Skill iconifyIcon={'mdi:language-typescript'} title={'TypeScript'} />
+          <Skill iconifyIcon={'fa-brands:js'} title={'JavaScript'} />
+          <Skill FontAwesomeIcon={faReact} title={'React'} />
+          <Skill iconifyIcon={'tabler:brand-redux'} title={'Redux'} />
+          <Skill iconifyIcon={'tabler:brand-redux'} title={'Redux-Toolkit'} />
+          <Skill FontAwesomeIcon={faHtml5} title={'HTML'} />
+          <Skill FontAwesomeIcon={faCss3Alt} title={'CSS'} />
+          <Skill iconifyIcon={'mdi:api'} title={'REST API'} />
+          <Skill iconifyIcon={'simple-icons:storybook'} title={'Story book'} />
+          <Skill iconifyIcon={'file-icons:test-js'} title={'Unit tests'} />
         </div>
       </div>
     </div>

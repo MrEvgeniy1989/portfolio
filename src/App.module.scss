@@ -1,18 +1,5 @@
-@import './common/styles/sass/variables';
-
 .app {
   position: relative;
-  width: var(--appWidth);
-
-  > div {
-    &:nth-child(n) {
-      background-color: $bgPrimary;
-    }
-
-    &:nth-child(2n) {
-      background-color: $bgSecondary;
-    }
-  }
 
   .scrollButton {
     all: unset;
@@ -32,11 +19,11 @@
       padding: 3px;
 
       opacity: 0.3;
-      border: 1px solid $textColor;
+      border: 1px solid var(--text-color);
       border-radius: 50%;
 
       & path {
-        fill: $textColor;
+        fill: var(--text-color);
       }
 
       &:hover {

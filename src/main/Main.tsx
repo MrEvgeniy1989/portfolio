@@ -9,7 +9,7 @@ import photo from '../assets/images/photo.webp'
 
 export const Main = () => {
   return (
-    <div className={style.mainBlock} id={'main'}>
+    <div className={style.main} id={'main'}>
       <div className={style.container}>
         <div className={style.greeting}>
           <span className={style.introducing}>

@@ -1,11 +1,11 @@
-@import '../common/styles/sass/variables';
 @import '../common/styles/sass/mixins';
 
-.mainBlock {
+.main {
   @include flex(row, center, center, nowrap);
 
   height: calc(100vh - 80px);
   padding: 50px 0;
+  background-color: var(--background-secondary);
 
   .container {
     @include container;
@@ -14,16 +14,16 @@
     .greeting {
       @include flex(column, flex-start, flex-start, nowrap);
 
-      color: $textColor;
+      color: var(--text-color);
 
       .introducing {
-        @include text($TitleFontFamily, 50px, 1.2, 700);
+        @include text(var(--font-family-primary), 50px, 1.2, 700);
 
         margin: 10px 0;
         letter-spacing: 3px;
 
         .lastName {
-          @include text($TitleFontFamily, 50px, 1.2, 700);
+          @include text(var(--font-family-primary), 50px, 1.2, 700);
 
           position: relative;
           z-index: 0;
@@ -40,13 +40,13 @@
             width: 100%;
             height: 20px;
 
-            background-color: $primaryColor;
+            background-color: var(--primary-color);
           }
         }
       }
 
       .mainTitle {
-        @include text($TextFontFamily, 20px, 1, 400);
+        @include text(var(--text-font-family), 20px, 1, 400);
 
         margin: 0;
 
@@ -88,7 +88,7 @@
         width: 103%;
         height: 108%;
 
-        border: 5px solid $primaryColor;
+        border: 5px solid var(--primary-color);
       }
 
       .parallaxEffectImg {
