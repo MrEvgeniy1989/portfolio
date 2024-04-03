@@ -1,6 +1,9 @@
 @import './common/styles/sass/variables';
 
 .app {
+  position: relative;
+  width: var(--appWidth);
+
   > div {
     &:nth-child(n) {
       background-color: $bgPrimary;
@@ -8,6 +11,38 @@
 
     &:nth-child(2n) {
       background-color: $bgSecondary;
+    }
+  }
+
+  .scrollButton {
+    all: unset;
+
+    cursor: pointer;
+
+    position: fixed;
+    z-index: 1000;
+    right: 10px;
+    bottom: 10px;
+
+    box-sizing: border-box;
+
+    .upArrowIcon {
+      width: 35px;
+      height: 35px;
+      padding: 3px;
+
+      opacity: 0.3;
+      border: 1px solid $textColor;
+      border-radius: 50%;
+
+      & path {
+        fill: $textColor;
+      }
+
+      &:hover {
+        opacity: 1;
+        transition: opacity 0.2s ease;
+      }
     }
   }
 }
