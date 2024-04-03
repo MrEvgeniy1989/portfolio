@@ -9,7 +9,7 @@
     @include flex(column, flex-start, stretch, nowrap);
 
     .projects {
-      @include flex(row, space-between, flex-start, wrap);
+      @include flex(row, space-around, flex-start, wrap);
 
       margin-top: 50px;
 
