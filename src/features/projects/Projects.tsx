@@ -2,9 +2,9 @@ import React from 'react'
 
 import style from './Projects.module.scss'
 
-import socialImage from '../assets/images/socialNetwork1.jpg'
-import todoImage from '../assets/images/todolist1.jpg'
-import { Title } from '../common/components/title/Title'
+import socialImage from '../../assets/images/socialNetwork1.jpg'
+import todoImage from '../../assets/images/todolist1.jpg'
+import { Title } from '../../common/components/title/Title'
 import { Project } from './project/Project'
 
 export const Projects = () => {

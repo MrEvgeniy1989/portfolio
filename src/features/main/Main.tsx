@@ -5,7 +5,7 @@ import Typewriter from 'typewriter-effect'
 
 import style from './Main.module.scss'
 
-import photo from '../assets/images/photo.webp'
+import photo from '../../assets/images/photo.webp'
 
 export const Main = () => {
   return (

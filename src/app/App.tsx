@@ -4,11 +4,11 @@ import s from './App.module.scss'
 
 import { Particle } from '../common/components/particle/Particle'
 import { ThemeProvider } from '../common/components/themeProvider/ThemeProvider'
-import { Footer } from '../footer/Footer'
-import { Header } from '../header/Header'
-import { Main } from '../main/Main'
-import { Projects } from '../projects/Projects'
-import { Skills } from '../skills/Skills'
+import { Footer } from '../features/footer/Footer'
+import { Header } from '../features/header/Header'
+import { Main } from '../features/main/Main'
+import { Projects } from '../features/projects/Projects'
+import { Skills } from '../features/skills/Skills'
 import { UpButton } from './upButton/UpButton'
 
 export const App = () => {

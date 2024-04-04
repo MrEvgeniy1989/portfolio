@@ -6,7 +6,7 @@ import { faReact } from '@fortawesome/free-brands-svg-icons/faReact'
 
 import style from './Skills.module.scss'
 
-import { Title } from '../common/components/title/Title'
+import { Title } from '../../common/components/title/Title'
 import { Skill } from './skill/Skill'
 
 export const Skills = () => {

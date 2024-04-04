@@ -2,12 +2,12 @@ import React from 'react'
 
 import style from './Footer.module.scss'
 
-import { CodewarsIcon } from '../assets/icons/socialIcons/CodewarsIcon'
-import { GithubIcon } from '../assets/icons/socialIcons/GithubIcon'
-import { LinkedinIcon } from '../assets/icons/socialIcons/LinkedinIcon'
-import { MailIcon } from '../assets/icons/socialIcons/MailIcon'
-import { TelegramIcon } from '../assets/icons/socialIcons/TelegramIcon'
-import { Title } from '../common/components/title/Title'
+import { CodewarsIcon } from '../../assets/icons/socialIcons/CodewarsIcon'
+import { GithubIcon } from '../../assets/icons/socialIcons/GithubIcon'
+import { LinkedinIcon } from '../../assets/icons/socialIcons/LinkedinIcon'
+import { MailIcon } from '../../assets/icons/socialIcons/MailIcon'
+import { TelegramIcon } from '../../assets/icons/socialIcons/TelegramIcon'
+import { Title } from '../../common/components/title/Title'
 
 export const Footer = () => {
   return (

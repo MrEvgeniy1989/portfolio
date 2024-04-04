@@ -2,7 +2,7 @@ import React from 'react'
 
 import style from './Project.module.scss'
 
-import { Button } from '../../common/components/button/Button'
+import { Button } from '../../../common/components/button/Button'
 
 type ProjectPropsType = {
   description: string

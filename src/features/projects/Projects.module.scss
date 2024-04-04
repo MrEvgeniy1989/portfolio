@@ -1,26 +1,23 @@
-@import './../common/styles/sass/mixins';
+@import '../../common/styles/sass/mixins';
 
-.skillsBlock {
-  position: relative;
+.projectsBlock {
   padding: 50px 0;
-  background-color: var(--background-primary);
+  background-color: var(--background-secondary);
 
   .container {
     @include container;
 
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
     justify-content: flex-start;
 
-    .skills {
+    .projects {
       display: flex;
       flex-wrap: wrap;
-      gap: 30px 0;
       align-items: flex-start;
-      justify-content: center;
+      justify-content: space-around;
 
-      width: 100%;
       margin-top: 50px;
 
       @media screen and (width <= 1127px) {
