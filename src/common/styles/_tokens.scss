@@ -1,0 +1,8 @@
+:root {
+  /* header */
+  --header-height: 60px;
+
+  /* max-width */
+  --horizontal-padding: 16px;
+  --max-width: calc(1280px - (var(--horizontal-padding) * 2));
+}
