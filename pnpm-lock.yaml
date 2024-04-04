@@ -62,6 +62,9 @@ dependencies:
   '@types/react-scroll':
     specifier: ^1.8.10
     version: 1.8.10
+  clsx:
+    specifier: ^2.1.0
+    version: 2.1.0
   eslint-plugin-jsx-a11y:
     specifier: ^6.8.0
     version: 6.8.0(eslint@8.57.0)
@@ -4628,6 +4631,11 @@ packages:
       is-regexp: 1.0.0
       is-supported-regexp-flag: 1.0.1
     dev: true
+
+  /clsx@2.1.0:
+    resolution: {integrity: sha512-m3iNNWpd9rl3jvvcBnu70ylMdrXt8Vlq4HYadnU5fwcOtvkSQWPmj7amUcDT2qYI7risszBjI5AUIUox9D16pg==}
+    engines: {node: '>=6'}
+    dev: false
 
   /co@4.6.0:
     resolution: {integrity: sha512-QVb0dM5HvG+uaxitm8wONl7jltx8dqhfU33DcqtOZcLSVIKSDDLDi7+0LbAKiyI8hD9u42m2YxXSkMGWThaecQ==}
