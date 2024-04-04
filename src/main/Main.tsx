@@ -30,7 +30,7 @@ export const Main = () => {
         </div>
 
         <div className={style.photoFrame}>
-          {window.innerWidth > 1230 ? (
+          {window.innerWidth > 767 ? (
             <Tilt
               className={style.parallaxEffectImg}
               gyroscope
