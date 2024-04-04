@@ -1,17 +1,23 @@
 @import '../../common/styles/sass/mixins';
 
 .skill {
-  @include flex(column, flex-start, center, nowrap);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 
   min-width: 20%;
   margin-bottom: 40px;
+
   color: var(--text-color);
   text-align: center;
 
   .icon {
-    @include flex(row, center, center, nowrap);
-
     transform: rotate(45deg);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     width: 90px;
     height: 90px;

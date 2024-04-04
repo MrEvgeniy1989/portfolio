@@ -6,10 +6,17 @@
 
   .container {
     @include container;
-    @include flex(column, flex-start, stretch, nowrap);
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
 
     .projects {
-      @include flex(row, space-around, flex-start, wrap);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: space-around;
 
       margin-top: 50px;
 

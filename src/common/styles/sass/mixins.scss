@@ -12,13 +12,6 @@
   margin: 0 auto;
 }
 
-@mixin flex($direction, $justifyContent, $alignItems, $wrap) {
-  display: flex;
-  flex-flow: $direction $wrap;
-  align-items: $alignItems;
-  justify-content: $justifyContent;
-}
-
 @mixin bgSettings() {
   background-repeat: no-repeat;
   background-position: center;

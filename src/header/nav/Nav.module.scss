@@ -1,8 +1,9 @@
 @import '../../common/styles/sass/mixins';
 
 .nav {
-  @include flex(row, space-between, stretch, nowrap);
-
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
   width: 340px;
 
   a {
@@ -14,6 +15,7 @@
 
     &:hover {
       color: var(--primary-color);
+      transition: color 0.2s ease;
     }
   }
 }
