@@ -34,8 +34,8 @@
     "web-vitals": "^3.5.2"
   },
   "scripts": {
-    "start": "sass src/index.scss src/index.scss && react-scripts start",
-    "build": "sass src/index.scss src/index.scss && react-scripts build",
+    "start": "react-scripts start",
+    "build": "GENERATE_SOURCEMAP=false react-scripts build",
     "format": "prettier --write src",
     "lint": "eslint src --ext .jsx,.js,.tsx,.ts  --no-error-on-unmatched-pattern --fix && stylelint --fix src/{,*/}*.{scss,css} --allow-empty-input",
     "test": "react-scripts test",

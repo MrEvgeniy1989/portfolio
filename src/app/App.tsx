@@ -1,17 +1,15 @@
 import React, { useEffect, useState } from 'react'
 
-import './App.module.scss'
+import s from './App.module.scss'
 
-import s from '../src/App.module.scss'
-
-import { UpArrowIcon } from './assets/icons/upArrowIcon'
-import { Particle } from './common/components/particle/Particle'
-import { ThemeProvider } from './common/components/themeProvider/ThemeProvider'
-import { Footer } from './footer/Footer'
-import { Header } from './header/Header'
-import { Main } from './main/Main'
-import { Projects } from './projects/Projects'
-import { Skills } from './skills/Skills'
+import { UpArrowIcon } from '../assets/icons/upArrowIcon'
+import { Particle } from '../common/components/particle/Particle'
+import { ThemeProvider } from '../common/components/themeProvider/ThemeProvider'
+import { Footer } from '../footer/Footer'
+import { Header } from '../header/Header'
+import { Main } from '../main/Main'
+import { Projects } from '../projects/Projects'
+import { Skills } from '../skills/Skills'
 
 export const App = () => {
   const [showButton, setShowButton] = useState(false)
