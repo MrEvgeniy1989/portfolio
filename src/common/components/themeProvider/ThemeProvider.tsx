@@ -41,7 +41,7 @@ export const ThemeProvider = ({ children }: Props) => {
           onClick={toggleTheme}
           title={theme === 'dark' ? 'Switch to light theme.' : 'Switch to dark theme.'}
         >
-          {theme === 'dark' ? <MoonIcon /> : <SunIcon />}
+          {theme === 'dark' ? <SunIcon /> : <MoonIcon />}
         </button>
         {children}
       </div>
@@ -50,7 +50,5 @@ export const ThemeProvider = ({ children }: Props) => {
 }
 
 export const useTheme = () => {
-  const theme = useContext(ThemeContext)
-
-  return theme
+  return useContext(ThemeContext)
 }
