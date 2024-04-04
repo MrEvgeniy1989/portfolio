@@ -5,8 +5,8 @@
 
   position: fixed;
   z-index: 1000;
-  right: 10px;
   bottom: 10px;
+  left: 10px;
 
   box-sizing: border-box;
 
@@ -15,12 +15,13 @@
     height: 35px;
     padding: 3px;
 
-    opacity: 0.3;
+    opacity: 0.5;
+    background-color: var(--text-color);
     border: 1px solid var(--text-color);
     border-radius: 50%;
 
     & path {
-      fill: var(--text-color);
+      fill: var(--text-color-second);
     }
 
     &:hover {
