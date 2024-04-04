@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { animateScroll as scroll } from 'react-scroll'
 
 import s from './upButton.module.scss'
 
@@ -8,13 +9,12 @@ import { useSmoothScroll } from '../../common/hooks/useSmoothScroll/useSmoothScr
 type Props = {}
 
 export const UpButton = ({}: Props) => {
-  const [showButton, setShowButton] = useState(false)
-  const scrollToTop = useSmoothScroll(setShowButton, 50)
+  const [showButton, setShowButton] = useState(true)
 
   return (
     <button
       className={s.scrollButton}
-      onClick={scrollToTop}
+      onClick={() => scroll.scrollToTop()}
       style={{ display: showButton ? 'block' : 'none' }}
     >
       <UpArrowIcon className={s.upArrowIcon} />

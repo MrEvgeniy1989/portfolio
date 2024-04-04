@@ -6,14 +6,16 @@
   justify-content: space-between;
   width: 340px;
 
-  a {
+  .link {
     @include text(var(--font-family-primary), 16px, 1.2, 400);
 
     cursor: pointer;
+    user-select: none;
     color: var(--text-color);
     text-decoration: none;
 
-    &:hover {
+    &:hover,
+    &.active {
       color: var(--primary-color);
       transition: color 0.2s ease;
     }

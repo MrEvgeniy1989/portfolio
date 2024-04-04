@@ -26,10 +26,6 @@ export const Particle = () => {
           fpsLimit: 120,
           interactivity: {
             events: {
-              onClick: {
-                enable: true,
-                mode: 'push',
-              },
               onHover: {
                 enable: true,
                 mode: 'repulse',
@@ -70,8 +66,8 @@ export const Particle = () => {
             number: {
               density: {
                 enable: true,
-                height: 1500,
-                width: 1500,
+                height: 1300,
+                width: 1300,
               },
               value: 50,
             },

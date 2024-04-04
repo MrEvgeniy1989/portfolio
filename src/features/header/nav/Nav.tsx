@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { Link as LinkScroll } from 'react-scroll'
 
-import style from './Nav.module.scss'
+import clsx from 'clsx'
+
+import s from './Nav.module.scss'
 
 const menuItems = [
   { href: 'main', id: 1, title: 'Main' },
@@ -10,20 +13,26 @@ const menuItems = [
 ]
 
 export const Nav = () => {
-  return (
-    // <div className={style.nav}>
-    //   <a href={'#main'}>Main</a>
-    //   <a href={'#skills'}>Skills</a>
-    //   <a href={'#projects'}>Projects</a>
-    //   <a href={'#contacts'}>Contacts</a>
-    // </div>
+  const [activeItem, setActiveItem] = useState<null | string>('main')
 
-    <ul className={style.nav}>
+  return (
+    <ul className={s.nav}>
       {menuItems.map(item => {
         return (
-          <a href={`#${item.href}`} key={item.id}>
+          <LinkScroll
+            className={clsx(s.link, activeItem === item.href ? s.active : '')}
+            hashSpy
+            key={item.id}
+            offset={-60}
+            onClick={() => {
+              setActiveItem(item.href)
+            }}
+            smooth
+            spy
+            to={item.href}
+          >
             {item.title}
-          </a>
+          </LinkScroll>
         )
       })}
     </ul>
