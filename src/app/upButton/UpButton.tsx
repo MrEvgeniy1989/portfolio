@@ -4,7 +4,6 @@ import { animateScroll as scroll } from 'react-scroll'
 import s from './upButton.module.scss'
 
 import { UpArrowIcon } from '../../assets/icons/upArrowIcon'
-import { useSmoothScroll } from '../../common/hooks/useSmoothScroll/useSmoothScroll'
 
 type Props = {}
 
@@ -25,7 +24,7 @@ export const UpButton = ({}: Props) => {
     return () => {
       window.removeEventListener('scroll', handleScroll)
     }
-  }, [window.scrollY])
+  }, [])
 
   return (
     <button
