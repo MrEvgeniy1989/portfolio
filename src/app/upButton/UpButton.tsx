@@ -12,7 +12,7 @@ export const UpButton = ({}: Props) => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 1) {
+      if (window.scrollY > 200) {
         setShowButton(true)
       } else {
         setShowButton(false)
@@ -27,12 +27,12 @@ export const UpButton = ({}: Props) => {
   }, [])
 
   return (
-    <button
-      className={s.scrollButton}
-      onClick={() => scroll.scrollToTop()}
-      style={{ display: showButton ? 'block' : 'none' }}
-    >
-      <UpArrowIcon className={s.upArrowIcon} />
-    </button>
+    <>
+      {showButton && (
+        <button className={s.scrollButton} onClick={() => scroll.scrollToTop()}>
+          <UpArrowIcon className={s.upArrowIcon} />
+        </button>
+      )}
+    </>
   )
 }
