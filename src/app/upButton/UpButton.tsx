@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { animateScroll as scroll } from 'react-scroll'
 
 import s from './upButton.module.scss'
@@ -9,7 +9,23 @@ import { useSmoothScroll } from '../../common/hooks/useSmoothScroll/useSmoothScr
 type Props = {}
 
 export const UpButton = ({}: Props) => {
-  const [showButton, setShowButton] = useState(true)
+  const [showButton, setShowButton] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 1) {
+        setShowButton(true)
+      } else {
+        setShowButton(false)
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll)
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [window.scrollY])
 
   return (
     <button
