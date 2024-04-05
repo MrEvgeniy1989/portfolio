@@ -3,7 +3,8 @@
 .project {
   display: flex;
   flex-direction: column;
-  width: 450px;
+  aspect-ratio: 4/3;
+  width: 500px;
 
   .imgContainer {
     @include bgSettings;
@@ -14,7 +15,7 @@
     align-items: center;
     justify-content: center;
 
-    height: 300px;
+    height: 100%;
 
     background-color: #333;
 
@@ -24,7 +25,7 @@
       position: absolute;
       inset: 0;
 
-      opacity: 0.4;
+      opacity: 0.3;
       background-color: black;
     }
   }
@@ -33,7 +34,7 @@
     padding: 25px 20px;
 
     .projectTitle {
-      @include text(var(--font-family-primary), 16px, 1.2, 700);
+      @include text(var(--font-family-primary), 1.5em, 1.2, 700);
 
       margin: 0 0 5px;
       color: var(--text-color);
@@ -41,7 +42,7 @@
     }
 
     .description {
-      @include text(var(--text-font-family), 12px, 1.8, 400);
+      @include text(var(--text-font-family), 1em, 1.8, 400);
 
       color: var(--text-color);
     }

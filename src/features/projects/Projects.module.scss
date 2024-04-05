@@ -15,10 +15,23 @@
     .projects {
       display: flex;
       flex-wrap: wrap;
+      gap: 40px;
       align-items: flex-start;
       justify-content: space-around;
 
       margin-top: 50px;
+
+      .cardsProject {
+        background-image: url('../../assets/images/projects/cardsProject.webp');
+      }
+
+      .todolistProject {
+        background-image: url('../../assets/images/projects/todolistProject.webp');
+      }
+
+      .socialNetworkProject {
+        background-image: url('../../assets/images/projects/socialNetworkProject.webp');
+      }
 
       @media screen and (width <= 1127px) {
         justify-content: center;

@@ -1,48 +1,37 @@
 import React from 'react'
 
-import style from './Projects.module.scss'
+import s from './Projects.module.scss'
 
-import socialImage from '../../assets/images/socialNetwork1.jpg'
-import todoImage from '../../assets/images/todolist1.jpg'
 import { Title } from '../../common/components/title/Title'
 import { Project } from './project/Project'
 
 export const Projects = () => {
-  const todolistStyle = {
-    backgroundImage: `url(${todoImage})`,
-  }
-  const socialStyle = {
-    backgroundImage: `url(${socialImage})`,
-  }
-  // const counterStyle = {
-  //   backgroundImage: `url(${imgUrl})`,
-  // }
-
   return (
-    <div className={style.projectsBlock} id={'projects'}>
-      <div className={style.container}>
+    <div className={s.projectsBlock} id={'projects'}>
+      <div className={s.container}>
         <Title text={'Projects'} />
-        <div className={style.projects}>
+        <div className={s.projects}>
           <Project
+            className={s.cardsProject}
             description={
-              'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores aut beatae blanditiis cupiditate deserunt dolorem, facere,impedit iure magnam maxime molestias mollitia natus neque nisi possimus quia recusandae reiciendissaepe?'
+              'The app is designed for question-and-answer card-based learning, with the ability to create your own decks of cards or use existing sets.'
             }
-            style={todolistStyle}
-            title={'Todo list'}
+            title={'Cards'}
           />
           <Project
+            className={s.todolistProject}
             description={
-              'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores fuga, nisi non possimus veritatis!'
+              'The project provides convenient management of tasks and to-do lists through an intuitive interface, allowing you to create, edit, delete and view tasks and to-do lists.'
             }
-            style={socialStyle}
+            title={'Todolist'}
+          />
+          <Project
+            className={s.socialNetworkProject}
+            description={
+              "The project is a platform where users can register, create personal profiles, view other users' profiles, add them as friends and chat."
+            }
             title={'Social network'}
           />
-          {/*<Project
-            title={'Counter'}
-            description={
-              'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores fuga, nisi non possimus veritatis!'
-            }
-          />*/}
         </div>
       </div>
     </div>
