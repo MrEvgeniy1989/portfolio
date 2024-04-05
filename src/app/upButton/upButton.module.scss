@@ -20,13 +20,15 @@
     border: 1px solid var(--text-color);
     border-radius: 50%;
 
+    transition: opacity var(--transition);
+
     & path {
       fill: var(--text-color-second);
     }
 
     &:hover {
       opacity: 1;
-      transition: opacity 0.2s ease;
+      transition: opacity var(--transition);
     }
   }
 }

@@ -22,10 +22,12 @@
     border-radius: 8px 0 0 8px;
     box-shadow: 0 0 10px 0 rgb(78 147 230 / 40%);
 
+    transition: all var(--transition);
+
     &:hover {
       background-color: rgb(78 147 230 / 100%);
       box-shadow: 0 0 10px 0 rgb(78 147 230 / 80%);
-      transition: all 0.2s ease;
+      transition: all var(--transition);
     }
 
     @media (width <= 480px) {

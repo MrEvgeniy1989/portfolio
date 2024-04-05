@@ -37,6 +37,8 @@
         border: 1px solid var(--text-color);
         border-radius: 50%;
 
+        transition: opacity var(--transition);
+
         a {
           display: flex;
           align-items: center;
@@ -56,7 +58,7 @@
 
         &:hover {
           opacity: 1;
-          transition: opacity 0.2s ease;
+          transition: opacity var(--transition);
         }
 
         @media screen and (width <= 380px) {
@@ -71,10 +73,10 @@
     }
 
     .copyright {
-      @include text(var(--text-font-family), 14px, 1.8, 300);
+      @include text(var(--text-font-family), 12px, 1.8, 300);
 
       margin-top: 40px;
-      opacity: 0.6;
+      opacity: 0.4;
     }
   }
 }

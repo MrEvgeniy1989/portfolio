@@ -11,13 +11,16 @@
 
     cursor: pointer;
     user-select: none;
+
     color: var(--text-color);
     text-decoration: none;
+
+    transition: color var(--transition);
 
     &:hover,
     &.active {
       color: var(--primary-color);
-      transition: color 0.2s ease;
+      transition: color var(--transition);
     }
   }
 }
