@@ -15,13 +15,13 @@ export const App = () => {
   return (
     <div className={s.app}>
       <ThemeProvider>
-        <Particle />
         <Header />
         <Main />
         <Skills />
         <Projects />
         <Footer />
         <UpButton />
+        <Particle />
       </ThemeProvider>
     </div>
   )
