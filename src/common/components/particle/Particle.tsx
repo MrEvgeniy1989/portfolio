@@ -1,28 +1,35 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 
 import { Particles, initParticlesEngine } from '@tsparticles/react'
 import { loadSlim } from '@tsparticles/slim'
 
 import { useTheme } from '../themeProvider/ThemeProvider'
 
-export const Particle = () => {
-  const [init, setInit] = useState(false)
+type Props = {
+  init: boolean
+  onLoaded: () => void
+}
+
+export const Particle = ({ init, onLoaded }: Props) => {
   const theme = useTheme()
 
   useEffect(() => {
-    initParticlesEngine(async engine => {
-      await loadSlim(engine)
-    }).then(() => {
-      setInit(true)
-    })
-  }, [])
+    const initializeParticles = async () => {
+      await initParticlesEngine(async engine => {
+        await loadSlim(engine)
+        onLoaded()
+      })
+    }
+
+    initializeParticles()
+  }, [onLoaded])
 
   return (
     init && (
       <Particles
         id={'tsparticles'}
         options={{
-          detectRetina: true,
+          detectRetina: false,
           fpsLimit: 120,
           interactivity: {
             events: {
@@ -33,9 +40,6 @@ export const Particle = () => {
               resize: { enable: true },
             },
             modes: {
-              push: {
-                quantity: 4,
-              },
               repulse: {
                 distance: 100,
                 duration: 0.1,
@@ -43,15 +47,12 @@ export const Particle = () => {
             },
           },
           particles: {
-            color: {
-              value: theme === 'dark' ? '#ffffff' : '#000000',
-            },
             links: {
               color: theme === 'dark' ? '#ffffff' : '#000000',
               distance: 200,
               enable: true,
-              opacity: 0.5,
-              width: 1,
+              opacity: 0.3,
+              width: 0.5,
             },
             move: {
               direction: 'none',
@@ -72,13 +73,13 @@ export const Particle = () => {
               value: 50,
             },
             opacity: {
-              value: 0.5,
+              value: 0.3,
             },
             shape: {
               type: 'circle',
             },
             size: {
-              value: { max: 1, min: 0.2 },
+              value: { max: 0.5, min: 0.2 },
             },
           },
         }}
