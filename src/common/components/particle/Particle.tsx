@@ -1,28 +1,24 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 
 import { Particles, initParticlesEngine } from '@tsparticles/react'
 import { loadSlim } from '@tsparticles/slim'
 
 import { useTheme } from '../themeProvider/ThemeProvider'
 
-type Props = {
-  init: boolean
-  onLoaded: () => void
-}
-
-export const Particle = ({ init, onLoaded }: Props) => {
+export const Particle = () => {
+  const [init, setInit] = useState(false)
   const theme = useTheme()
 
   useEffect(() => {
     const initializeParticles = async () => {
       await initParticlesEngine(async engine => {
         await loadSlim(engine)
-        onLoaded()
+        setInit(true)
       })
     }
 
     initializeParticles()
-  }, [onLoaded])
+  }, [])
 
   return (
     init && (
@@ -51,7 +47,7 @@ export const Particle = ({ init, onLoaded }: Props) => {
               color: theme === 'dark' ? '#ffffff' : '#000000',
               distance: 200,
               enable: true,
-              opacity: 0.3,
+              opacity: 0.5,
               width: 0.5,
             },
             move: {
@@ -73,13 +69,13 @@ export const Particle = ({ init, onLoaded }: Props) => {
               value: 50,
             },
             opacity: {
-              value: 0.3,
+              value: 0.5,
             },
             shape: {
               type: 'circle',
             },
             size: {
-              value: { max: 0.5, min: 0.2 },
+              value: { max: 0.8, min: 0.2 },
             },
           },
         }}
