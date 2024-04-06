@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkportfolio=self.webpackChunkportfolio||[]).push([[1738],{1738:(e,t,n)=>{async function a(e){let t=!(arguments.length>1&&void 0!==arguments[1])||arguments[1];await e.addParticleUpdater("twinkle",(async()=>{const{TwinkleUpdater:e}=await n.e(4314).then(n.bind(n,4314));return new e}),t)}n.d(t,{loadTwinkleUpdater:()=>a})}}]);
+//# sourceMappingURL=1738.64444741.chunk.js.map

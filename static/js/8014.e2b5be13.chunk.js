@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkportfolio=self.webpackChunkportfolio||[]).push([[8014],{8014:(n,t,e)=>{async function o(n){let t=!(arguments.length>1&&void 0!==arguments[1])||arguments[1];const{ExportImagePlugin:o}=await e.e(9230).then(e.bind(e,9230));await n.addPlugin(new o(n),t)}e.d(t,{loadExportImagePlugin:()=>o})}}]);
+//# sourceMappingURL=8014.e2b5be13.chunk.js.map

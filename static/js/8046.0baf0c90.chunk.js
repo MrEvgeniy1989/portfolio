@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkportfolio=self.webpackChunkportfolio||[]).push([[8046],{8046:(o,i,n)=>{async function t(o){let i=!(arguments.length>1&&void 0!==arguments[1])||arguments[1];const{ExportVideoPlugin:t}=await n.e(7612).then(n.bind(n,7612));await o.addPlugin(new t(o),i)}n.d(i,{loadExportVideoPlugin:()=>t})}}]);
+//# sourceMappingURL=8046.0baf0c90.chunk.js.map

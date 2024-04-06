@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkportfolio=self.webpackChunkportfolio||[]).push([[8530],{8530:(e,n,o)=>{o.d(n,{loadPerlinNoisePath:()=>i});const t="perlinNoise";async function i(e){let n=!(arguments.length>1&&void 0!==arguments[1])||arguments[1];const{PerlinNoiseGenerator:i}=await o.e(9924).then(o.bind(o,9924));await e.addPathGenerator(t,new i,n)}}}]);
+//# sourceMappingURL=8530.21b0017d.chunk.js.map
