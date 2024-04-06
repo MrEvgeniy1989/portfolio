@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkportfolio=self.webpackChunkportfolio||[]).push([[8098],{8098:(e,t,a)=>{async function n(e){var t;let n=!(arguments.length>1&&void 0!==arguments[1])||arguments[1];const o=e,{EmittersPathShapeGenerator:r}=await a.e(2798).then(a.bind(a,2798));null===(t=o.addEmitterShapeGenerator)||void 0===t||t.call(o,"path",new r),await o.refresh(n)}a.d(t,{loadEmittersShapePath:()=>n})}}]);
-//# sourceMappingURL=8098.17fa3248.chunk.js.map

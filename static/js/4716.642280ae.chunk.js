@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkportfolio=self.webpackChunkportfolio||[]).push([[4716],{4716:(r,a,o)=>{o.d(a,{HeartDrawer:()=>u});class u{draw(r){!function(r){const{context:a,radius:o}=r,u=2*o,e=.5*o,t=o+e,c=-o,i=-o;a.moveTo(c,i+e),a.quadraticCurveTo(c,i,c+e,i),a.quadraticCurveTo(c+o,i,c+o,i+e),a.quadraticCurveTo(c+o,i,c+t,i),a.quadraticCurveTo(c+u,i,c+u,i+e),a.quadraticCurveTo(c+u,i+o,c+t,i+t),a.lineTo(c+o,i+u),a.lineTo(c+e,i+t),a.quadraticCurveTo(c,i+o,c,i+e)}(r)}}}}]);
-//# sourceMappingURL=4716.642280ae.chunk.js.map

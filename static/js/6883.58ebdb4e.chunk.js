@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkportfolio=self.webpackChunkportfolio||[]).push([[6883],{6883:(n,t,e)=>{e.d(t,{ExportJSONPlugin:()=>s});class s{constructor(n){this.id="export-json",this._engine=n}async getPlugin(n){const{ExportJSONInstance:t}=await e.e(4635).then(e.bind(e,4635));return new t(n,this._engine)}loadOptions(){}needsPlugin(){return!0}}}}]);
-//# sourceMappingURL=6883.58ebdb4e.chunk.js.map

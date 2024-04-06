@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkportfolio=self.webpackChunkportfolio||[]).push([[4292],{4292:(e,t,n)=>{async function o(e){let t=!(arguments.length>1&&void 0!==arguments[1])||arguments[1];const{RoundedRectDrawer:o}=await n.e(6109).then(n.bind(n,6109));await e.addShape("rounded-rect",new o,t)}n.d(t,{loadRoundedRectShape:()=>o})}}]);
-//# sourceMappingURL=4292.9cbd22c1.chunk.js.map

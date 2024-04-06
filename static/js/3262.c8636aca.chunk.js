@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkportfolio=self.webpackChunkportfolio||[]).push([[3262],{3262:(n,o,i)=>{async function t(n){let o=!(arguments.length>1&&void 0!==arguments[1])||arguments[1];const{SoundsPlugin:t}=await i.e(8850).then(i.bind(i,8850));await n.addPlugin(new t(n),o)}i.d(o,{loadSoundsPlugin:()=>t})}}]);
-//# sourceMappingURL=3262.c8636aca.chunk.js.map
