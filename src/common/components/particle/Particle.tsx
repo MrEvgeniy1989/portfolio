@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 
-import { loadAll } from '@tsparticles/all'
 import { Particles, initParticlesEngine } from '@tsparticles/react'
+import { loadSlim } from '@tsparticles/slim'
 
 import { useTheme } from '../themeProvider/ThemeProvider'
 
@@ -12,7 +12,7 @@ export const Particle = () => {
   useEffect(() => {
     const initializeParticles = async () => {
       await initParticlesEngine(async engine => {
-        await loadAll(engine)
+        await loadSlim(engine)
         setInit(true)
       })
     }
