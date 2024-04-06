@@ -18,7 +18,7 @@ export const Nav = () => {
         className={s.nav}
         currentClassName={s.active}
         items={menuItems.map(item => item.href)}
-        offset={-300}
+        offset={-600}
       >
         {menuItems.map(item => {
           return (
