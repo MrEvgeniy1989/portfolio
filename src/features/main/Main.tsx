@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Tilt from 'react-parallax-tilt'
 
 import Typewriter from 'typewriter-effect'
@@ -8,6 +8,20 @@ import style from './Main.module.scss'
 import photo from '../../assets/images/mainPhoto/photo.webp'
 
 export const Main = () => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+
+  useEffect(() => {
+    const updateWindowWidth = () => {
+      setWindowWidth(window.innerWidth)
+    }
+
+    window.addEventListener('resize', updateWindowWidth)
+
+    return () => {
+      window.removeEventListener('resize', updateWindowWidth)
+    }
+  }, [])
+
   return (
     <div className={style.main} id={'main'}>
       <div className={style.container}>
@@ -30,7 +44,7 @@ export const Main = () => {
         </div>
 
         <div className={style.photoFrame}>
-          {window.innerWidth > 767 ? (
+          {windowWidth > 767 ? (
             <Tilt
               className={style.parallaxEffectImg}
               gyroscope
