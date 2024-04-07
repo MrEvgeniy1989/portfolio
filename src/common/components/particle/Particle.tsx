@@ -10,14 +10,11 @@ export const Particle = () => {
   const theme = useTheme()
 
   useEffect(() => {
-    const initializeParticles = async () => {
-      await initParticlesEngine(async engine => {
-        await loadSlim(engine)
-        setInit(true)
-      })
-    }
-
-    initializeParticles()
+    initParticlesEngine(async engine => {
+      await loadSlim(engine)
+    }).then(() => {
+      setInit(true)
+    })
   }, [])
 
   return (
@@ -25,23 +22,23 @@ export const Particle = () => {
       <Particles
         id={'tsparticles'}
         options={{
-          detectRetina: false,
-          fpsLimit: 120,
-          interactivity: {
-            events: {
-              onHover: {
-                enable: true,
-                mode: 'repulse',
-              },
-              resize: { enable: true },
-            },
-            modes: {
-              repulse: {
-                distance: 100,
-                duration: 0.1,
-              },
-            },
-          },
+          // detectRetina: false,
+          // fpsLimit: 120,
+          // interactivity: {
+          //   events: {
+          //     onHover: {
+          //       enable: true,
+          //       mode: 'repulse',
+          //     },
+          //     resize: { enable: true },
+          //   },
+          //   modes: {
+          //     repulse: {
+          //       // distance: 100,
+          //       duration: 0.1,
+          //     },
+          //   },
+          // },
           particles: {
             links: {
               color: theme === 'dark' ? '#ffffff' : '#000000',
@@ -71,9 +68,9 @@ export const Particle = () => {
             opacity: {
               value: 0.5,
             },
-            shape: {
-              type: 'circle',
-            },
+            // shape: {
+            //   type: 'circle',
+            // },
             size: {
               value: { max: 0.8, min: 0.2 },
             },
