@@ -9,7 +9,7 @@
 
   height: calc(100vh - var(--header-height));
   margin-top: var(--header-height);
-  padding-top: 50px;
+  padding: 10px 0;
 
   background-color: var(--background-secondary);
 
@@ -55,6 +55,14 @@
 
             background-color: var(--primary-color);
           }
+
+          @media screen and (width <= 767px) {
+            font-size: 32px;
+          }
+        }
+
+        @media screen and (width <= 767px) {
+         font-size: 32px;
         }
       }
 
@@ -69,6 +77,10 @@
 
         @media screen and (width <= 1230px) {
           margin-bottom: 50px;
+        }
+
+        @media screen and (width <= 767px) {
+          font-size: 16px;
         }
       }
 
