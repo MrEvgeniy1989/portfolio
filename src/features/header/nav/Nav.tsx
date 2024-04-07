@@ -13,21 +13,19 @@ const menuItems = [
 
 export const Nav = () => {
   return (
-    <ul>
-      <ScrollSpy
-        className={s.nav}
-        currentClassName={s.active}
-        items={menuItems.map(item => item.href)}
-        offset={-600}
-      >
-        {menuItems.map(item => {
-          return (
-            <LinkScroll className={s.link} key={item.id} offset={-60} smooth to={item.href}>
-              {item.title}
-            </LinkScroll>
-          )
-        })}
-      </ScrollSpy>
-    </ul>
+    <ScrollSpy
+      className={s.nav}
+      currentClassName={s.active}
+      items={menuItems.map(item => item.href)}
+      offset={-600}
+    >
+      {menuItems.map(item => {
+        return (
+          <LinkScroll className={s.link} key={item.id} offset={-60} smooth to={item.href}>
+            {item.title}
+          </LinkScroll>
+        )
+      })}
+    </ScrollSpy>
   )
 }
