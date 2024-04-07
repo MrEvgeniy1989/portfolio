@@ -31,7 +31,7 @@
     }
 
     @media (width <= 480px) {
-      top: calc(var(--header-height) + 2px);
+      top: calc(var(--header-height) + 10px);
       width: 16px;
       padding: 0 2px;
     }

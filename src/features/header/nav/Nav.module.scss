@@ -2,9 +2,11 @@
 
 .nav {
   display: flex;
+  gap: 30px;
   align-items: stretch;
   justify-content: space-between;
-  width: 340px;
+
+  max-width: 340px;
 
   .link {
     @include text(var(--font-family-primary), 16px, 1.2, 400);
