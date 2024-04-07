@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import Tilt from 'react-parallax-tilt'
 
 import Typewriter from 'typewriter-effect'
@@ -6,21 +6,10 @@ import Typewriter from 'typewriter-effect'
 import style from './Main.module.scss'
 
 import photo from '../../assets/images/mainPhoto/photo.webp'
+import useScreenSize from '../../common/hooks/useScreenSize/useScreenSize'
 
 export const Main = () => {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth)
-
-  useEffect(() => {
-    const updateWindowWidth = () => {
-      setWindowWidth(window.innerWidth)
-    }
-
-    window.addEventListener('resize', updateWindowWidth)
-
-    return () => {
-      window.removeEventListener('resize', updateWindowWidth)
-    }
-  }, [])
+  const { windowWidth } = useScreenSize()
 
   return (
     <div className={style.main} id={'main'}>
