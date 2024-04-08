@@ -6,7 +6,7 @@ import { faHtml5 } from '@fortawesome/free-brands-svg-icons/faHtml5'
 import { faReact } from '@fortawesome/free-brands-svg-icons/faReact'
 import { IconDefinition } from '@fortawesome/free-regular-svg-icons'
 
-import style from './Skills.module.scss'
+import s from './Skills.module.scss'
 
 import { Title } from '../../common/components/title/Title'
 import { Skill } from './skill/Skill'
@@ -34,11 +34,11 @@ const skills: SkillType[] = [
 
 export const Skills = () => {
   return (
-    <section className={style.skillsBlock} id={'skills'}>
-      <div className={style.container}>
+    <section className={s.skillsBlock} id={'skills'}>
+      <div className={s.container}>
         <Title text={'Skills'} />
 
-        <div className={style.skills}>
+        <div className={s.skills}>
           <Fade cascade damping={0.2}>
             {skills.map(skill => {
               return (

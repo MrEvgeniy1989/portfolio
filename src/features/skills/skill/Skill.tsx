@@ -4,7 +4,7 @@ import { IconProp } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Icon } from '@iconify/react'
 
-import style from './Skill.module.scss'
+import s from './Skill.module.scss'
 
 type SkillPropsType = {
   FontAwesomeIcon?: IconProp
@@ -18,17 +18,17 @@ export const Skill = (props: SkillPropsType) => {
   let icon
 
   if (props.FontAwesomeIcon) {
-    icon = <FontAwesomeIcon className={style.fontAwesomeIcon} icon={props.FontAwesomeIcon} />
+    icon = <FontAwesomeIcon className={s.fontAwesomeIcon} icon={props.FontAwesomeIcon} />
   } else if (props.iconifyIcon) {
-    icon = <Icon className={style.iconifyIcon} fontSize={100} icon={props.iconifyIcon} />
+    icon = <Icon className={s.iconifyIcon} fontSize={100} icon={props.iconifyIcon} />
   } else {
     icon = <img alt={props.imgAltTitle} src={props.imgSrc} />
   }
 
   return (
-    <div className={style.skill}>
-      <div className={style.icon}>{icon}</div>
-      <div className={style.skillInfo}>
+    <div className={s.skill}>
+      <div className={s.icon}>{icon}</div>
+      <div className={s.skillInfo}>
         <h3>{props.title}</h3>
       </div>
     </div>
