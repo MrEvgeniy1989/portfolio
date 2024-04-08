@@ -38,7 +38,7 @@ const projectsData: ProjectType[] = [
 
 export const Projects = () => {
   return (
-    <div className={s.projectsBlock} id={'projects'}>
+    <section className={s.projectsBlock} id={'projects'}>
       <div className={s.container}>
         <Title text={'Projects'} />
         <div className={s.projects}>
@@ -54,6 +54,6 @@ export const Projects = () => {
           })}
         </div>
       </div>
-    </div>
+    </section>
   )
 }

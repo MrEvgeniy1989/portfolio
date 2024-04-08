@@ -34,7 +34,7 @@ const skills: SkillType[] = [
 
 export const Skills = () => {
   return (
-    <div className={style.skillsBlock} id={'skills'}>
+    <section className={style.skillsBlock} id={'skills'}>
       <div className={style.container}>
         <Title text={'Skills'} />
 
@@ -53,6 +53,6 @@ export const Skills = () => {
           </Fade>
         </div>
       </div>
-    </div>
+    </section>
   )
 }

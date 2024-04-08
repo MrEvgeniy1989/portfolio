@@ -7,8 +7,8 @@
   align-items: center;
   justify-content: center;
 
+  width: 100%;
   height: 100vh;
-  padding: 10px 0;
 
   background-color: var(--background-secondary);
 
@@ -122,11 +122,8 @@
         transform-style: preserve-3d;
         transform: perspective(1000px);
 
-        aspect-ratio: 3 / 4;
-        width: 100%;
-        min-width: 300px;
-        max-width: 20vw;
-        height: 100%;
+        width: 350px;
+        height: 430px;
 
         background-image: url('../../assets/images/mainPhoto/photoBackground.webp');
         background-repeat: no-repeat;
@@ -144,8 +141,8 @@
         position: relative;
         z-index: 1;
 
-        width: 200px;
-        height: 265px;
+        width: 310px;
+        height: 380px;
 
         background-image: url('../../assets/images/mainPhoto/photoBackground.webp');
         background-repeat: no-repeat;
@@ -162,9 +159,5 @@
     @media screen and (width <= 1040px) {
       flex-direction: column;
     }
-  }
-
-  @media screen and (width <= 1230px) {
-    padding: 10px;
   }
 }

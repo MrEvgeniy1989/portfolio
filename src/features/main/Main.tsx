@@ -15,11 +15,11 @@ export const Main = () => {
     <div className={style.main} id={'main'}>
       <div className={style.container}>
         <div className={style.greeting}>
-          <span className={style.introducing}>
+          <h2 className={style.introducing}>
             I am Evgenii <span className={style.lastName}>Slupachik</span>
-          </span>
+          </h2>
           <h1 className={style.mainTitle}>
-            <p> Frontend Developer</p>
+            <p>Frontend Developer</p>
             <Typewriter
               options={{
                 autoStart: true,

@@ -46,7 +46,7 @@ const footerIcons: FooterIconType[] = [
 
 export const Footer = () => {
   return (
-    <div className={style.footer} id={'contacts'}>
+    <footer className={style.footer} id={'contacts'}>
       <div className={style.container}>
         <Title text={'Evgenii Slupachik'} />
         <div className={style.socialIcons}>
@@ -60,6 +60,6 @@ export const Footer = () => {
         </div>
         <span className={style.copyright}>© 2023 All Rights Reserved.</span>
       </div>
-    </div>
+    </footer>
   )
 }
