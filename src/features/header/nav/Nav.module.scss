@@ -1,35 +1,36 @@
 @import '../../../common/styles/sass/mixins';
 
 .nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
   width: 100%;
   max-width: 300px;
 
-  .link {
-    @include text(var(--font-family-primary), 16px, 1.2, 400);
+  & > ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-    cursor: pointer;
-    user-select: none;
+    .link {
+      @include text(var(--font-family-primary), 16px, 1.2, 400);
 
-    color: var(--text-color);
-    text-decoration: none;
+      cursor: pointer;
+      user-select: none;
 
-    transition: color var(--transition);
+      color: var(--text-color);
+      text-decoration: none;
 
-    &.active {
-      color: var(--primary-color);
       transition: color var(--transition);
-    }
 
-    @media (width >= 767px) {
-      &:hover {
+      &.active {
         color: var(--primary-color);
         transition: color var(--transition);
+      }
+
+      @media (width >= 767px) {
+        &:hover {
+          color: var(--primary-color);
+          transition: color var(--transition);
+        }
       }
     }
   }
 }
-
