@@ -1,4 +1,5 @@
 import React from 'react'
+import { Fade } from 'react-awesome-reveal'
 
 import { faCss3Alt } from '@fortawesome/free-brands-svg-icons/faCss3Alt'
 import { faHtml5 } from '@fortawesome/free-brands-svg-icons/faHtml5'
@@ -36,17 +37,20 @@ export const Skills = () => {
     <div className={style.skillsBlock} id={'skills'}>
       <div className={style.container}>
         <Title text={'Skills'} />
+
         <div className={style.skills}>
-          {skills.map(skill => {
-            return (
-              <Skill
-                FontAwesomeIcon={skill.FontAwesomeIcon}
-                iconifyIcon={skill.iconifyIcon}
-                key={skill.id}
-                title={skill.title}
-              />
-            )
-          })}
+          <Fade cascade damping={0.2}>
+            {skills.map(skill => {
+              return (
+                <Skill
+                  FontAwesomeIcon={skill.FontAwesomeIcon}
+                  iconifyIcon={skill.iconifyIcon}
+                  key={skill.id}
+                  title={skill.title}
+                />
+              )
+            })}
+          </Fade>
         </div>
       </div>
     </div>
