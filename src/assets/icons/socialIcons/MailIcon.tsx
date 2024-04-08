@@ -1,6 +1,6 @@
 import { SVGProps, memo } from 'react'
 export const MailIcon = memo((props: SVGProps<SVGSVGElement>) => (
-  <svg height={80} viewBox={'0 0 60 60'} width={80} xmlns={'http://www.w3.org/2000/svg'} {...props}>
+  <svg height={40} viewBox={'0 0 60 60'} width={40} xmlns={'http://www.w3.org/2000/svg'} {...props}>
     <path
       d={
         'M6.6 11.8c-1.5 1.8-1.1 2.2 10.9 9.6 7.5 4.7 13 7.5 13.7 7 .7-.4 6.4-3.8 12.6-7.7 10.8-6.7 11.2-7 9.6-8.8C51.8 10.2 49.9 10 30 10c-19.8 0-21.8.2-23.4 1.8z'

@@ -2,9 +2,9 @@ import { SVGProps, memo } from 'react'
 export const TelegramIcon = memo((props: SVGProps<SVGSVGElement>) => (
   <svg
     fill={'var(--text-color)'}
-    height={60}
+    height={40}
     viewBox={'0 0 24 24'}
-    width={60}
+    width={40}
     xmlns={'http://www.w3.org/2000/svg'}
     {...props}
   >
