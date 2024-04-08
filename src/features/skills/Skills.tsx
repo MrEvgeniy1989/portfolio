@@ -3,11 +3,33 @@ import React from 'react'
 import { faCss3Alt } from '@fortawesome/free-brands-svg-icons/faCss3Alt'
 import { faHtml5 } from '@fortawesome/free-brands-svg-icons/faHtml5'
 import { faReact } from '@fortawesome/free-brands-svg-icons/faReact'
+import { IconDefinition } from '@fortawesome/free-regular-svg-icons'
 
 import style from './Skills.module.scss'
 
 import { Title } from '../../common/components/title/Title'
 import { Skill } from './skill/Skill'
+
+type SkillType = {
+  FontAwesomeIcon?: IconDefinition
+  iconifyIcon?: string
+  id: number
+  imgAltTitle?: string
+  title: string
+}
+
+const skills: SkillType[] = [
+  { iconifyIcon: 'mdi:language-typescript', id: 1, title: 'TypeScript' },
+  { iconifyIcon: 'fa-brands:js', id: 2, title: 'JavaScript' },
+  { FontAwesomeIcon: faReact, id: 3, title: 'React' },
+  { iconifyIcon: 'tabler:brand-redux', id: 4, title: 'Redux' },
+  { iconifyIcon: 'tabler:brand-redux', id: 5, title: 'Redux-Toolkit' },
+  { FontAwesomeIcon: faHtml5, id: 6, title: 'HTML' },
+  { FontAwesomeIcon: faCss3Alt, id: 7, title: 'CSS' },
+  { iconifyIcon: 'mdi:api', id: 8, title: 'REST API' },
+  { iconifyIcon: 'simple-icons:storybook', id: 9, title: 'Story book' },
+  { iconifyIcon: 'file-icons:test-js', id: 10, title: 'Unit tests' },
+]
 
 export const Skills = () => {
   return (
@@ -15,16 +37,16 @@ export const Skills = () => {
       <div className={style.container}>
         <Title text={'Skills'} />
         <div className={style.skills}>
-          <Skill iconifyIcon={'mdi:language-typescript'} title={'TypeScript'} />
-          <Skill iconifyIcon={'fa-brands:js'} title={'JavaScript'} />
-          <Skill FontAwesomeIcon={faReact} title={'React'} />
-          <Skill iconifyIcon={'tabler:brand-redux'} title={'Redux'} />
-          <Skill iconifyIcon={'tabler:brand-redux'} title={'Redux-Toolkit'} />
-          <Skill FontAwesomeIcon={faHtml5} title={'HTML'} />
-          <Skill FontAwesomeIcon={faCss3Alt} title={'CSS'} />
-          <Skill iconifyIcon={'mdi:api'} title={'REST API'} />
-          <Skill iconifyIcon={'simple-icons:storybook'} title={'Story book'} />
-          <Skill iconifyIcon={'file-icons:test-js'} title={'Unit tests'} />
+          {skills.map(skill => {
+            return (
+              <Skill
+                FontAwesomeIcon={skill.FontAwesomeIcon}
+                iconifyIcon={skill.iconifyIcon}
+                key={skill.id}
+                title={skill.title}
+              />
+            )
+          })}
         </div>
       </div>
     </div>

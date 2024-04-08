@@ -10,13 +10,13 @@ import { TelegramIcon } from '../../assets/icons/socialIcons/TelegramIcon'
 import { Title } from '../../common/components/title/Title'
 import { FooterIcon } from './footerIcon/FooterIcon'
 
-type FooterIconProps = {
+type FooterIconType = {
   children: React.ReactNode
   href: string
   id: number
 }
 
-const footerIcons: FooterIconProps[] = [
+const footerIcons: FooterIconType[] = [
   {
     children: <TelegramIcon className={style.telegramIcon} />,
     href: 'https://t.me/mrEvgeniy1989',
