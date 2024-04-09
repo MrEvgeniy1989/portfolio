@@ -1,11 +1,6 @@
-@import '../../common/styles/sass/mixins';
-
 .footer {
   position: relative;
   z-index: 1;
-
-  //height: 300px;
-  //min-height: 300px;
   padding: 50px 0 0;
   background-color: var(--background-primary);
 
@@ -29,10 +24,14 @@
     }
 
     .copyright {
-      @include text(var(--text-font-family), 12px, 1.8, 400);
-
       margin-top: 40px;
       margin-bottom: 10px;
+
+      font-family: var(--text-font-family);
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 1.8;
+
       opacity: 0.4;
     }
   }

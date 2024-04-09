@@ -9,13 +9,4 @@
   height: var(--header-height);
 
   background-color: rgb(var(--r-bg-p) var(--g-bg-p) var(--b-bg-p) / 60%);
-
-  .container {
-    display: flex;
-    justify-content: flex-end;
-
-    @media screen and (width <= 480px) {
-      justify-content: center;
-    }
-  }
 }

@@ -1,5 +1,3 @@
-@import '../../../common/styles/sass/mixins';
-
 .skill {
   display: flex;
   flex-direction: column;
@@ -39,9 +37,12 @@
 
   .skillInfo {
     h3 {
-      @include text(var(--font-family-primary), 20px, 1.2, 700);
-
       margin: 0 0 5px;
+
+      font-family: var(--font-family-primary);
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1.2;
       color: var(--text-color);
       letter-spacing: 1px;
     }
