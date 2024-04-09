@@ -9,12 +9,13 @@
 body {
   min-height: 100vh;
   font-size: 100%;
-  font-family: var(--font-family-primary), sans-serif;
+  font-family: var(--text-font-family), sans-serif;
   color: var(--text-color);
   box-sizing: border-box;
   background-color: var(--background-primary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  line-height: 1.2;
 }
 
 input,

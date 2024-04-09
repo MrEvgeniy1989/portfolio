@@ -8,7 +8,7 @@ import { Nav } from './nav/Nav'
 export const Header = () => {
   return (
     <header className={s.header} id={'header'}>
-      <Container>
+      <Container className={s.container}>
         <Nav />
       </Container>
     </header>

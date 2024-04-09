@@ -9,4 +9,8 @@
   height: var(--header-height);
 
   background-color: rgb(var(--r-bg-p) var(--g-bg-p) var(--b-bg-p) / 60%);
+
+  .container {
+    height: 100%;
+  }
 }

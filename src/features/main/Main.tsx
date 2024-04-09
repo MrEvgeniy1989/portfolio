@@ -17,7 +17,7 @@ export const Main = () => {
       <Container className={s.container}>
         <div className={s.greeting}>
           <h2 className={s.introducing}>
-            I am Evgenii <span className={s.lastName}>Slupachik</span>
+            I am <span className={s.lastName}>Evgenii Slupachik</span>
           </h2>
           <h1 className={s.mainTitle}>
             <p>Frontend Developer</p>
@@ -33,7 +33,7 @@ export const Main = () => {
           </h1>
         </div>
 
-        <div className={s.photoFrame}>
+        <div className={s.photoWrapper}>
           {windowWidth > 767 ? (
             <Tilt
               className={s.parallaxEffectImg}
