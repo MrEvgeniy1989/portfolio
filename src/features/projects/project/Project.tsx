@@ -2,25 +2,30 @@ import React from 'react'
 
 import clsx from 'clsx'
 
-import style from './Project.module.scss'
+import s from './Project.module.scss'
 
 import { Button } from '../../../common/components/button/Button'
 
 type Props = {
-  className?: string
   description: string
+  src: string
   title: string
 }
 
-export const Project = ({ className, description, title }: Props) => {
+export const Project = ({ description, src, title }: Props) => {
   return (
-    <div className={style.project}>
-      <div className={clsx(style.imgContainer, className)}>
+    <div className={s.project}>
+      <img alt={title} className={s.img} src={src} />
+      <div className={clsx(s.imgContainer)}>
         <Button text={'Смотреть'} />
       </div>
-      <div className={style.projectInfo}>
-        <h3 className={style.projectTitle}>{title}</h3>
-        <span className={style.description}>{description}</span>
+      <div className={s.projectInfo}>
+        <h3 className={s.projectTitle}>{title}</h3>
+        <span className={s.description}>{description}</span>
+        <div>
+          <a href={'#'}>Link</a>
+          <a href={'#'}>Code</a>
+        </div>
       </div>
     </div>
   )
