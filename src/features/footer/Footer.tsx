@@ -1,12 +1,13 @@
 import React from 'react'
 
-import style from './Footer.module.scss'
+import s from './Footer.module.scss'
 
 import { CodewarsIcon } from '../../assets/icons/socialIcons/CodewarsIcon'
 import { GithubIcon } from '../../assets/icons/socialIcons/GithubIcon'
 import { LinkedinIcon } from '../../assets/icons/socialIcons/LinkedinIcon'
 import { MailIcon } from '../../assets/icons/socialIcons/MailIcon'
 import { TelegramIcon } from '../../assets/icons/socialIcons/TelegramIcon'
+import { Container } from '../../common/components/container/Container'
 import { Title } from '../../common/components/title/Title'
 import { FooterIcon } from './footerIcon/FooterIcon'
 
@@ -18,27 +19,27 @@ type FooterIconType = {
 
 const footerIcons: FooterIconType[] = [
   {
-    children: <TelegramIcon className={style.telegramIcon} />,
+    children: <TelegramIcon className={s.telegramIcon} />,
     href: 'https://t.me/mrEvgeniy1989',
     id: 1,
   },
   {
-    children: <LinkedinIcon className={style.linkedinIcon} />,
+    children: <LinkedinIcon className={s.linkedinIcon} />,
     href: 'https://www.linkedin.com/in/evgenii-slupachik/',
     id: 2,
   },
   {
-    children: <CodewarsIcon className={style.codewarsIcon} />,
+    children: <CodewarsIcon className={s.codewarsIcon} />,
     href: 'https://www.codewars.com/users/Slupachik_Evgenii',
     id: 3,
   },
   {
-    children: <GithubIcon className={style.githubIcon} />,
+    children: <GithubIcon className={s.githubIcon} />,
     href: 'https://github.com/MrEvgeniy1989',
     id: 4,
   },
   {
-    children: <MailIcon className={style.mailIcon} />,
+    children: <MailIcon className={s.mailIcon} />,
     href: 'mailto:mr.evgeniy1989@yandex.ru',
     id: 5,
   },
@@ -46,10 +47,10 @@ const footerIcons: FooterIconType[] = [
 
 export const Footer = () => {
   return (
-    <footer className={style.footer} id={'contacts'}>
-      <div className={style.container}>
+    <footer className={s.footer} id={'contacts'}>
+      <Container className={s.container}>
         <Title text={'Evgenii Slupachik'} />
-        <div className={style.socialIcons}>
+        <div className={s.socialIcons}>
           {footerIcons.map(icon => {
             return (
               <FooterIcon href={icon.href} key={icon.id}>
@@ -58,8 +59,8 @@ export const Footer = () => {
             )
           })}
         </div>
-        <span className={style.copyright}>© 2023 All Rights Reserved.</span>
-      </div>
+        <span className={s.copyright}>© 2023 All Rights Reserved.</span>
+      </Container>
     </footer>
   )
 }

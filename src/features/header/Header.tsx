@@ -1,15 +1,16 @@
 import React from 'react'
 
-import style from './Header.module.scss'
+import s from './Header.module.scss'
 
+import { Container } from '../../common/components/container/Container'
 import { Nav } from './nav/Nav'
 
 export const Header = () => {
   return (
-    <header className={style.header} id={'header'}>
-      <div className={style.container}>
+    <header className={s.header} id={'header'}>
+      <Container className={s.container}>
         <Nav />
-      </div>
+      </Container>
     </header>
   )
 }

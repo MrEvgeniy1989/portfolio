@@ -8,6 +8,7 @@ import { IconDefinition } from '@fortawesome/free-regular-svg-icons'
 
 import s from './Skills.module.scss'
 
+import { Container } from '../../common/components/container/Container'
 import { Title } from '../../common/components/title/Title'
 import { Skill } from './skill/Skill'
 
@@ -35,7 +36,7 @@ const skills: SkillType[] = [
 export const Skills = () => {
   return (
     <section className={s.skillsBlock} id={'skills'}>
-      <div className={s.container}>
+      <Container className={s.container}>
         <Title text={'Skills'} />
 
         <div className={s.skills}>
@@ -52,7 +53,7 @@ export const Skills = () => {
             })}
           </Fade>
         </div>
-      </div>
+      </Container>
     </section>
   )
 }

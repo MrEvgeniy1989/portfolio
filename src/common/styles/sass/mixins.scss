@@ -4,16 +4,3 @@
   font-weight: $fontWeight;
   line-height: $lineHeight;
 }
-
-@mixin container() {
-  width: 100%;
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 0 var(--horizontal-padding);
-}
-
-@mixin bgSettings() {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}

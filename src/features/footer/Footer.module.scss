@@ -4,23 +4,16 @@
   position: relative;
   z-index: 1;
 
-  display: flex;
-  align-items: center;
-  justify-content: stretch;
-
-  min-height: 300px;
-
+  //height: 300px;
+  //min-height: 300px;
+  padding: 50px 0 0;
   background-color: var(--background-primary);
 
   .container {
-    @include container;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-
-    padding: 50px var(--horizontal-padding) 20px;
 
     .socialIcons {
       display: flex;
@@ -36,9 +29,10 @@
     }
 
     .copyright {
-      @include text(var(--text-font-family), 12px, 1.8, 300);
+      @include text(var(--text-font-family), 12px, 1.8, 400);
 
       margin-top: 40px;
+      margin-bottom: 10px;
       opacity: 0.4;
     }
   }

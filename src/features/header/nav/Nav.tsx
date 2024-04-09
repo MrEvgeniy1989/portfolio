@@ -14,7 +14,7 @@ const menuItems = [
 export const Nav = () => {
   return (
     <nav className={s.nav}>
-      <ScrollSpy currentClassName={s.active} items={menuItems.map(item => item.href)} offset={-550}>
+      <ScrollSpy currentClassName={s.active} items={menuItems.map(item => item.href)} offset={-610}>
         {menuItems.map(item => {
           return (
             <LinkScroll className={s.link} key={item.id} offset={-60} smooth to={item.href}>

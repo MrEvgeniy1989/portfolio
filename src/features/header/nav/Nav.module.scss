@@ -1,6 +1,8 @@
 @import '../../../common/styles/sass/mixins';
 
 .nav {
+  display: flex;
+  align-items: center;
   width: 100%;
   max-width: 300px;
 
@@ -8,6 +10,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
 
     .link {
       @include text(var(--font-family-primary), 16px, 1.2, 400);

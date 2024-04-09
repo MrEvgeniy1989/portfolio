@@ -5,6 +5,7 @@ import s from './Projects.module.scss'
 import cardsImg from '../../assets/images/projects/cardsProject.webp'
 import socialNetworkImg from '../../assets/images/projects/socialNetworkProject.webp'
 import todolistImg from '../../assets/images/projects/todolistProject.webp'
+import { Container } from '../../common/components/container/Container'
 import { Title } from '../../common/components/title/Title'
 import { Project } from './project/Project'
 
@@ -42,7 +43,7 @@ const projectsData: ProjectType[] = [
 export const Projects = () => {
   return (
     <section className={s.projectsBlock} id={'projects'}>
-      <div className={s.container}>
+      <Container className={s.container}>
         <Title text={'Projects'} />
         <div className={s.projects}>
           {projectsData.map(project => {
@@ -56,7 +57,7 @@ export const Projects = () => {
             )
           })}
         </div>
-      </div>
+      </Container>
     </section>
   )
 }
