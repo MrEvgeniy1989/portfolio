@@ -10,17 +10,15 @@
     align-items: center;
     justify-content: flex-start;
 
+    .footerTitle {
+      margin-bottom: 70px;
+    }
+
     .socialIcons {
       display: flex;
-      align-items: center;
-      justify-content: space-between;
-
-      width: 400px;
-      margin-top: 50px;
-
-      @media screen and (width <= 505px) {
-        width: 100%;
-      }
+      gap: 20px;
+      justify-content: center;
+      width: 100%;
     }
 
     .copyright {

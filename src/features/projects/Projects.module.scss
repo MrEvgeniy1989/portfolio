@@ -1,5 +1,4 @@
 .projectsBlock {
-  padding: 50px 0;
   background-color: var(--background-secondary);
 
   .container {
@@ -10,10 +9,9 @@
     .projects {
       display: flex;
       flex-wrap: wrap;
+      row-gap: 40px;
       align-items: flex-start;
       justify-content: space-around;
-
-      margin-top: 50px;
 
       @media screen and (width <= 1127px) {
         justify-content: center;

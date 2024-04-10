@@ -49,7 +49,7 @@ export const Footer = () => {
   return (
     <footer className={s.footer} id={'contacts'}>
       <Container className={s.container}>
-        <Title text={'Evgenii Slupachik'} />
+        <Title className={s.footerTitle} text={'Evgenii Slupachik'} />
         <div className={s.socialIcons}>
           {footerIcons.map(icon => {
             return (

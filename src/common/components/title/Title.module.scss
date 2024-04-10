@@ -1,14 +1,14 @@
 .title {
   position: relative;
 
-  margin: 0;
+  margin-bottom: 80px;
 
   font-family: var(--font-family-primary);
   font-size: 36px;
   font-weight: 600;
   text-align: center;
   text-transform: capitalize;
-  letter-spacing: 0.14em;
+  letter-spacing: 5px;
 
   &::before {
     content: '';
@@ -16,7 +16,7 @@
     position: absolute;
     bottom: -30px;
     left: 50%;
-    transform: translate(-50%, 50%);
+    transform: translateX(-50%);
 
     width: 55px;
     height: 1px;

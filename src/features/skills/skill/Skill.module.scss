@@ -2,11 +2,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
-
-  min-width: 20%;
-  margin-bottom: 40px;
-
   color: var(--text-color);
 
   .icon {
@@ -16,51 +11,23 @@
     align-items: center;
     justify-content: center;
 
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
     margin-bottom: 30px;
 
     background-color: var(--background-secondary);
 
-    img,
-    .fontAwesomeIcon,
-    .iconifyIcon {
+    svg {
       transform: rotate(-45deg);
-      height: 80%;
-      color: var(--primary-color);
-    }
-
-    .iconifyIcon {
-      height: 90%;
+      height: 50px;
     }
   }
 
-  .skillInfo {
-    h3 {
-      margin: 0 0 5px;
-
-      font-family: var(--font-family-primary);
-      font-size: 20px;
-      font-weight: 700;
-      line-height: 1.2;
-      color: var(--text-color);
-      letter-spacing: 1px;
-    }
-  }
-
-  @media screen and (width <= 1439px) {
-    flex-basis: 25%;
-  }
-
-  @media screen and (width <= 1079px) {
-    flex-basis: 33%;
-  }
-
-  @media screen and (width <= 720px) {
-    flex-basis: 50%;
-  }
-
-  @media screen and (width <= 352px) {
-    flex-basis: 100%;
+  .skillTitle {
+    font-family: var(--font-family-primary);
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-color);
+    letter-spacing: 1px;
   }
 }
