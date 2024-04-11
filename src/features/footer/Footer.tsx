@@ -59,7 +59,7 @@ export const Footer = () => {
             )
           })}
         </div>
-        <span className={s.copyright}>© 2023 All Rights Reserved.</span>
+        <small className={s.copyright}>© 2023 All Rights Reserved.</small>
       </Container>
     </footer>
   )

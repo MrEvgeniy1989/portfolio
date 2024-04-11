@@ -1,7 +1,7 @@
 .footer {
   position: relative;
   z-index: 1;
-  padding: 50px 0 0;
+  padding: 40px 0;
   background-color: var(--background-primary);
 
   .container {
@@ -12,6 +12,9 @@
 
     .footerTitle {
       margin-bottom: 70px;
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 3px;
     }
 
     .socialIcons {
@@ -23,11 +26,8 @@
 
     .copyright {
       margin-top: 40px;
-      margin-bottom: 10px;
-
       font-size: 12px;
       line-height: 1.8;
-
       opacity: 0.4;
     }
   }

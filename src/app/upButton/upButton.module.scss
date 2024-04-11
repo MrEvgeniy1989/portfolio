@@ -15,20 +15,23 @@
     height: 35px;
     padding: 3px;
 
-    opacity: 0.5;
-    background-color: var(--text-color);
-    border: 1px solid var(--text-color);
+    color: var(--border-color);
+
+    background-color: transparent;
+    border: 1px solid var(--border-color);
     border-radius: 50%;
 
-    transition: opacity var(--transition);
-
-    & path {
-      fill: var(--text-color-second);
-    }
+    transition: var(--transition);
 
     &:hover {
-      opacity: 1;
-      transition: opacity var(--transition);
+      transform: translateY(-4px);
+
+      color: var(--text-color-second);
+
+      background-color: var(--primary-color);
+      border-color: var(--primary-color);
+
+      transition: var(--transition);
     }
   }
 

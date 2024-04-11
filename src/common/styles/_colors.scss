@@ -13,6 +13,9 @@
   --b-bg-p: 32;
 
   --background-secondary: #252527;
+
+  // border
+  --border-color: #8f8f90;
 }
 
 .light-theme {
@@ -32,4 +35,7 @@
   --b-bg-p: 255;
 
   --background-secondary: rgb(220, 218, 224);
+
+  // border
+  --border-color: #7c7b7f;
 }
