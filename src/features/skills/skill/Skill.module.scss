@@ -1,3 +1,5 @@
+@import '../../../common/styles/mixins';
+
 .skill {
   display: flex;
   flex-direction: column;
@@ -24,10 +26,8 @@
   }
 
   .skillTitle {
-    font-family: var(--font-family-primary);
-    font-size: 20px;
-    font-weight: 700;
-    color: var(--text-color);
-    letter-spacing: 1px;
+    @include text($fontFamily: var(--font-family-primary), $fontWeight: 700, $Fmax: 20, $Fmin: 16);
+
+    letter-spacing: 0.05em;
   }
 }

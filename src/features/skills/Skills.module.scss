@@ -18,16 +18,17 @@
 
       & > div {
         flex-basis: calc(20% - 30px);
+        flex-grow: 1;
 
         @media screen and (width <= 931px) {
           flex-basis: 25%;
         }
 
-        @media screen and (width <= 650px) {
+        @media screen and (width <= 768px) {
           flex-basis: 33%;
         }
 
-        @media screen and (width <= 480px) {
+        @media screen and (width <= 576px) {
           flex-basis: 50%;
         }
 
