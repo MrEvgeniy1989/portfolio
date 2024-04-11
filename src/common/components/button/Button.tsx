@@ -1,15 +1,19 @@
 import React from 'react'
 
-import style from './Button.module.scss'
+import clsx from 'clsx'
+
+import s from './Button.module.scss'
 
 type ButtonPropsType = {
-  text: string
+  className?: string
+  href: string
+  title: string
 }
 
-export const Button = (props: ButtonPropsType) => {
+export const Button = ({ className, href, title }: ButtonPropsType) => {
   return (
-    <a className={style.btn} href={''}>
-      {props.text}
+    <a className={clsx(s.btn, className)} href={href} rel={'noreferrer'} target={'_blank'}>
+      {title}
     </a>
   )
 }
