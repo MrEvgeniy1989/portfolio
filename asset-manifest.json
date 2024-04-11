@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.5f3e032b.css",
-    "main.js": "/portfolio/static/js/main.5fc7527b.js",
+    "main.css": "/portfolio/static/css/main.c747ad0e.css",
+    "main.js": "/portfolio/static/js/main.3389a6d0.js",
     "static/js/9572.4de34254.chunk.js": "/portfolio/static/js/9572.4de34254.chunk.js",
     "static/js/8002.18d58afa.chunk.js": "/portfolio/static/js/8002.18d58afa.chunk.js",
     "static/js/6000.f75787ec.chunk.js": "/portfolio/static/js/6000.f75787ec.chunk.js",
@@ -74,11 +74,11 @@
     "static/media/photo.webp": "/portfolio/static/media/photo.a26cfed2924ae9cd4a39.webp",
     "static/media/photoBackground.webp": "/portfolio/static/media/photoBackground.3906e8ffb69a5cb7a2cc.webp",
     "static/media/socialNetworkProject.webp": "/portfolio/static/media/socialNetworkProject.4df6b0332bae2a471603.webp",
-    "static/media/cardsProject.webp": "/portfolio/static/media/cardsProject.62e81175befb639a26e7.webp",
+    "static/media/cardsProject.webp": "/portfolio/static/media/cardsProject.089e44f06a5f1b893ab1.webp",
     "static/media/todolistProject.webp": "/portfolio/static/media/todolistProject.c465e821c8f7cc6ea033.webp",
     "index.html": "/portfolio/index.html",
-    "main.5f3e032b.css.map": "/portfolio/static/css/main.5f3e032b.css.map",
-    "main.5fc7527b.js.map": "/portfolio/static/js/main.5fc7527b.js.map",
+    "main.c747ad0e.css.map": "/portfolio/static/css/main.c747ad0e.css.map",
+    "main.3389a6d0.js.map": "/portfolio/static/js/main.3389a6d0.js.map",
     "9572.4de34254.chunk.js.map": "/portfolio/static/js/9572.4de34254.chunk.js.map",
     "8002.18d58afa.chunk.js.map": "/portfolio/static/js/8002.18d58afa.chunk.js.map",
     "6000.f75787ec.chunk.js.map": "/portfolio/static/js/6000.f75787ec.chunk.js.map",
@@ -150,7 +150,7 @@
     "5080.039e4c19.chunk.js.map": "/portfolio/static/js/5080.039e4c19.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5f3e032b.css",
-    "static/js/main.5fc7527b.js"
+    "static/css/main.c747ad0e.css",
+    "static/js/main.3389a6d0.js"
   ]
 }
