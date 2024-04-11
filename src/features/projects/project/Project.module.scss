@@ -1,3 +1,5 @@
+@import '../../../common/styles/mixins';
+
 .project {
   position: relative;
   z-index: 1;
@@ -76,10 +78,14 @@
     padding: 25px 20px;
 
     .projectTitle {
-      font-family: var(--font-family-primary);
-      font-size: 16px;
-      font-weight: 700;
-      letter-spacing: 1px;
+      @include text(
+        $fontFamily: var(--font-family-primary),
+        $Fmax: 18,
+        $Fmin: 18,
+        $fontWeight: 700
+      );
+
+      letter-spacing: 0.06em;
     }
 
     .description {

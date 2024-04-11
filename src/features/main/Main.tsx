@@ -17,7 +17,7 @@ export const Main = () => {
       <Container className={s.container}>
         <div className={s.greeting}>
           <h2 className={s.introducing}>
-            I am <span className={s.lastName}>Evgenii Slupachik</span>
+            I am <span className={s.name}>Evgenii Slupachik</span>
           </h2>
           <h1 className={s.mainTitle}>
             <p>Frontend Developer</p>

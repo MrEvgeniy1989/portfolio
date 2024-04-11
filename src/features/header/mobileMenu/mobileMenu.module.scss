@@ -1,3 +1,5 @@
+@import '../../../common/styles/mixins';
+
 .mobileMenu {
   display: none;
   width: 100%;
@@ -64,7 +66,7 @@
     align-items: center;
     justify-content: center;
 
-    background-color: rgb(31 31 32 / 90%);
+    background-color: rgb(31 31 32 / 92%);
 
     transition: 0.4s ease-in-out;
 
@@ -78,16 +80,11 @@
       transition: 0.4s ease-in-out;
 
       .link {
+        @include text($fontFamily: var(--font-family-primary), $Fmax: 24, $Fmin: 24);
+
         cursor: pointer;
         user-select: none;
-
-        font-family: var(--font-family-primary);
-        font-size: 20px;
-        font-weight: 400;
-        line-height: 1.2;
-        color: var(--text-color);
         text-decoration: none;
-
         transition: color var(--transition);
 
         &.active {
