@@ -23,14 +23,16 @@
     color: var(--border-color);
   }
 
-  &:hover {
-    transform: translateY(-4px);
-    background-color: var(--primary-color);
-    border-color: var(--primary-color);
-    transition: var(--transition);
+  @media screen and (width > 768px) {
+    &:hover {
+      transform: translateY(-4px);
+      background-color: var(--primary-color);
+      border-color: var(--primary-color);
+      transition: var(--transition);
 
-    & a {
-      color: var(--text-color-second);
+      & a {
+        color: var(--text-color-second);
+      }
     }
   }
 }

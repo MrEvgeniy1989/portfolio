@@ -41,6 +41,10 @@
             height: 20px;
 
             background-color: var(--primary-color);
+
+            @media screen and (width <= 992px) {
+              bottom: -5px;
+            }
           }
         }
 

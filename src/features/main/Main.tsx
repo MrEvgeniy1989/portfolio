@@ -34,7 +34,7 @@ export const Main = () => {
         </div>
 
         <div className={s.photoWrapper}>
-          {windowWidth > 767 ? (
+          {windowWidth > 768 ? (
             <Tilt
               className={s.parallaxEffectImg}
               gyroscope

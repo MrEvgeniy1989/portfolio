@@ -14,6 +14,7 @@ import { StorybookIcon } from '../../assets/icons/skills/storybookIcon'
 import { TypescriptIcon } from '../../assets/icons/skills/typescriptIcon'
 import { Container } from '../../common/components/container/Container'
 import { Title } from '../../common/components/title/Title'
+import useScreenSize from '../../common/hooks/useScreenSize/useScreenSize'
 import { Skill } from './skill/Skill'
 
 type SkillType = {
@@ -37,17 +38,25 @@ const skills: SkillType[] = [
 ]
 
 export const Skills = () => {
+  const { windowWidth } = useScreenSize()
+
   return (
     <section className={s.skillsBlock} id={'skills'}>
       <Container className={s.container}>
         <Title text={'Skills'} />
 
         <div className={s.skills}>
-          <Fade cascade damping={0.2}>
-            {skills.map(skill => {
+          {windowWidth > 768 ? (
+            <Fade cascade damping={0.1}>
+              {skills.map(skill => {
+                return <Skill icon={skill.icon} key={skill.id} title={skill.title} />
+              })}
+            </Fade>
+          ) : (
+            skills.map(skill => {
               return <Skill icon={skill.icon} key={skill.id} title={skill.title} />
-            })}
-          </Fade>
+            })
+          )}
         </div>
       </Container>
     </section>

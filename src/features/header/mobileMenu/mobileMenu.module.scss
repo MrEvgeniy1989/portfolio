@@ -84,7 +84,10 @@
 
         cursor: pointer;
         user-select: none;
+
+        color: #fff;
         text-decoration: none;
+
         transition: color var(--transition);
 
         &.active {

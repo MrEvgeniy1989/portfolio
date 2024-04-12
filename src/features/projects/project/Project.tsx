@@ -25,7 +25,7 @@ export const Project = ({ codeHref, description, projectHref, src, title }: Prop
         <h3 className={s.projectTitle}>{title}</h3>
         <span className={s.description}>{description}</span>
         <div className={s.links}>
-          <Button className={s.link} href={projectHref} title={'Demo'} />
+          <Button className={s.link} href={projectHref} title={'Project'} />
           <Button className={s.link} href={codeHref} title={'Code'} />
         </div>
       </div>

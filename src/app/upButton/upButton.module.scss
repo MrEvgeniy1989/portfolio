@@ -23,15 +23,17 @@
 
     transition: var(--transition);
 
-    &:hover {
-      transform: translateY(-4px);
+    @media screen and (width > 768px) {
+      &:hover {
+        transform: translateY(-4px);
 
-      color: var(--text-color-second);
+        color: var(--text-color-second);
 
-      background-color: var(--primary-color);
-      border-color: var(--primary-color);
+        background-color: var(--primary-color);
+        border-color: var(--primary-color);
 
-      transition: var(--transition);
+        transition: var(--transition);
+      }
     }
   }
 
