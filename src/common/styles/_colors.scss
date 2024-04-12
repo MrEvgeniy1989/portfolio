@@ -1,4 +1,4 @@
-.dark-theme {
+:root[data-theme='dark'] {
   // text
   --text-color: #fff;
   --text-color-second: #000;
@@ -18,7 +18,7 @@
   --border-color: #8f8f90;
 }
 
-.light-theme {
+:root[data-theme='light'] {
   // text
   --text-color: #000;
   --text-color-second: #fff;
