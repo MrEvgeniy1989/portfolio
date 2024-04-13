@@ -23,7 +23,7 @@ const projectsData: ProjectType[] = [
     codeHref: 'https://github.com/MrEvgeniy1989/cards',
     description:
       'The app is designed for question-and-answer card-based learning, with the ability to create your own decks of cards or use existing sets.',
-    id: 1,
+    id: 3,
     projectHref: 'https://cards-for-study.vercel.app',
     src: cardsImg,
     title: 'Cards',
@@ -38,11 +38,11 @@ const projectsData: ProjectType[] = [
     title: 'Todolist',
   },
   {
-    codeHref: '#',
+    codeHref: 'https://github.com/MrEvgeniy1989/samurai-way-main',
     description:
       "The project is a platform where users can register, create personal profiles, view other users' profiles, add them as friends and chat.",
-    id: 3,
-    projectHref: '#',
+    id: 1,
+    projectHref: 'https://mrevgeniy1989.github.io/samurai-way-main/#/profile',
 
     src: socialNetworkImg,
     title: 'Social network',
