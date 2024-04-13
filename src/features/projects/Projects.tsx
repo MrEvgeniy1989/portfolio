@@ -29,11 +29,11 @@ const projectsData: ProjectType[] = [
     title: 'Cards',
   },
   {
-    codeHref: '#',
+    codeHref: 'https://github.com/MrEvgeniy1989/todolistT',
     description:
       'The project provides convenient management of tasks and to-do lists through an intuitive interface, allowing you to create, edit, delete and view tasks and to-do lists.',
     id: 2,
-    projectHref: '#',
+    projectHref: 'https://mrevgeniy1989.github.io/todolistT/#/',
     src: todolistImg,
     title: 'Todolist',
   },
