@@ -25,8 +25,8 @@ export const Main = () => {
               options={{
                 autoStart: true,
                 delay: 100,
-                deleteSpeed: 999999999999999,
-                loop: false,
+                // deleteSpeed: 999999999999999,
+                loop: true,
                 strings: ['Frontend Developer'],
               }}
             />
