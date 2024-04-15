@@ -3,6 +3,7 @@ import React from 'react'
 import s from './Projects.module.scss'
 
 import cardsImg from '../../assets/images/projects/cardsProject.webp'
+import carsProject from '../../assets/images/projects/carsProject.webp'
 import socialNetworkImg from '../../assets/images/projects/socialNetworkProject.webp'
 import todolistImg from '../../assets/images/projects/todolistProject.webp'
 import { Container } from '../../common/components/container/Container'
@@ -23,7 +24,7 @@ const projectsData: ProjectType[] = [
     codeHref: 'https://github.com/MrEvgeniy1989/cards',
     description:
       'The app is designed for question-and-answer card-based learning, with the ability to create your own decks of cards or use existing sets.',
-    id: 3,
+    id: 4,
     projectHref: 'https://cards-for-study.vercel.app',
     src: cardsImg,
     title: 'Cards',
@@ -32,7 +33,7 @@ const projectsData: ProjectType[] = [
     codeHref: 'https://github.com/MrEvgeniy1989/todolistT',
     description:
       'The project provides convenient management of tasks and to-do lists through an intuitive interface, allowing you to create, edit, delete and view tasks and to-do lists.',
-    id: 2,
+    id: 3,
     projectHref: 'https://mrevgeniy1989.github.io/todolistT/#/',
     src: todolistImg,
     title: 'Todolist',
@@ -41,11 +42,20 @@ const projectsData: ProjectType[] = [
     codeHref: 'https://github.com/MrEvgeniy1989/samurai-way-main',
     description:
       "The project is a platform where users can register, create personal profiles, view other users' profiles, add them as friends and chat.",
-    id: 1,
-    projectHref: 'https://mrevgeniy1989.github.io/samurai-way-main/#/profile',
+    id: 2,
+    projectHref: 'https://mrevgeniy1989.github.io/samurai-way-main/',
 
     src: socialNetworkImg,
     title: 'Social network',
+  },
+  {
+    codeHref: 'https://github.com/MrEvgeniy1989/cars-hw',
+    description: 'A one-page website for car rentals.',
+    id: 1,
+    projectHref: 'https://mrevgeniy1989.github.io/cars-hw/',
+
+    src: carsProject,
+    title: 'CarsApp',
   },
 ]
 
