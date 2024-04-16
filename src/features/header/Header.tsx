@@ -3,6 +3,7 @@ import React from 'react'
 import s from './Header.module.scss'
 
 import { Container } from '../../common/components/container/Container'
+import useScreenSize from '../../common/hooks/useScreenSize/useScreenSize'
 import { DesktopMenu } from './desktopMenu/DesktopMenu'
 import { MobileMenu } from './mobileMenu/MobileMenu'
 
@@ -20,11 +21,16 @@ const menuItems: MenuItem[] = [
 ]
 
 export const Header = () => {
+  const { windowWidth } = useScreenSize()
+
   return (
     <header className={s.header} id={'header'}>
       <Container className={s.container}>
-        <DesktopMenu menuItems={menuItems} />
-        <MobileMenu menuItems={menuItems} />
+        {windowWidth > 768 ? (
+          <DesktopMenu menuItems={menuItems} />
+        ) : (
+          <MobileMenu menuItems={menuItems} />
+        )}
       </Container>
     </header>
   )
