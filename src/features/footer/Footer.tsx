@@ -20,7 +20,7 @@ type FooterIconType = {
 const footerIcons: FooterIconType[] = [
   {
     children: <TelegramIcon className={s.telegramIcon} />,
-    href: 'https://t.me/mrEvgeniy1989',
+    href: 'https://t.me/evgenii_frontend_developer',
     id: 1,
   },
   {
