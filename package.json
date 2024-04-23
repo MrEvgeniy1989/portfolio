@@ -4,18 +4,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^6.4.2",
-    "@testing-library/react": "^14.2.1",
-    "@testing-library/user-event": "^14.5.2",
-    "@tsparticles/engine": "^3.3.0",
-    "@tsparticles/react": "^3.0.0",
-    "@tsparticles/slim": "^3.3.0",
-    "@types/jest": "^29.5.12",
-    "@types/node-sass": "^4.11.7",
-    "@types/react": "^18.2.61",
-    "@types/react-dom": "^18.2.19",
-    "@types/react-fontawesome": "^1.6.8",
-    "@types/react-scroll": "^1.8.10",
     "clsx": "^2.1.0",
     "eslint-plugin-jsx-a11y": "^6.8.0",
     "gh-pages": "^6.1.1",
@@ -25,11 +13,10 @@
     "react-parallax-tilt": "^1.7.219",
     "react-scripts": "5.0.1",
     "react-scroll": "^1.9.0",
-    "react-scrollspy": "^3.4.3",
+    "react-scrollspy": "3.4.3",
     "sass": "^1.71.1",
     "typescript": "^5.3.3",
-    "typewriter-effect": "^2.21.0",
-    "web-vitals": "^3.5.2"
+    "typewriter-effect": "^2.21.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -61,6 +48,13 @@
     ]
   },
   "devDependencies": {
+    "@tsparticles/engine": "^3.3.0",
+    "@tsparticles/react": "^3.0.0",
+    "@tsparticles/slim": "^3.3.0",
+    "@types/node-sass": "^4.11.7",
+    "@types/react": "^18.2.61",
+    "@types/react-dom": "^18.2.19",
+    "@types/react-scroll": "^1.8.10",
     "@it-incubator/eslint-config": "^1.0.2",
     "@it-incubator/prettier-config": "^0.1.2",
     "@it-incubator/stylelint-config": "^1.0.3",
