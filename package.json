@@ -14,7 +14,6 @@
     "react-scripts": "5.0.1",
     "react-scroll": "^1.9.0",
     "react-scrollspy": "3.4.3",
-    "sass": "^1.75.0",
     "typescript": "^5.4.5",
     "typewriter-effect": "^2.21.0"
   },
@@ -71,7 +70,7 @@
     "eslint-plugin-react": "^7.34.1",
     "prettier": "^3.2.5",
     "prettier-stylelint": "^0.4.2",
-    "sass": "^1.71.1",
+    "sass": "^1.75.0",
     "stylelint": "^16.3.1",
     "stylelint-config-clean-order": "^5.4.2",
     "stylelint-prettier": "^5.0.0"
